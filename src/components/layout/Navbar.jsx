@@ -33,19 +33,21 @@ const Navbar = () => {
         }`}
         aria-label="Primary navigation"
       >
-        <div className="flex items-center justify-between gap-6 px-4 py-3">
-          <Link to="/" className="flex min-w-0 items-center gap-3">
+        <div className="flex items-center justify-between gap-4 px-4 py-2.5 sm:px-5">
+          <Link to="/" className="flex min-w-0 items-center">
             <div className="min-w-0">
               <img
                 src="/shivaditya-logo.png"
                 alt={company.name}
-                className="h-10 w-auto max-w-[230px] object-contain"
+                className="h-8 w-auto max-w-[210px] object-contain sm:h-9 sm:max-w-[225px]"
               />
-              <p className="truncate text-xs text-slate-500">{company.tagline}</p>
+              <p className="mt-0.5 hidden truncate text-[11px] leading-tight text-slate-500 xl:block">
+                {company.tagline}
+              </p>
             </div>
           </Link>
 
-          <div className="hidden items-center gap-1 lg:flex">
+          <div className="hidden items-center gap-1 xl:flex">
             {navigation.map((item) => {
               const active = location.pathname === item.href;
               return (
@@ -62,11 +64,11 @@ const Navbar = () => {
             })}
           </div>
 
-          <div className="hidden lg:block">
+          <div className="hidden xl:block">
             <button
               type="button"
               onClick={scrollToContact}
-              className="rounded-full bg-brand-950 px-5 py-3 text-sm font-semibold text-white shadow-soft hover:-translate-y-0.5 hover:bg-brand-900"
+              className="rounded-full bg-brand-950 px-5 py-2.5 text-sm font-semibold text-white shadow-soft hover:-translate-y-0.5 hover:bg-brand-900"
             >
               Start a Project
             </button>
@@ -74,7 +76,7 @@ const Navbar = () => {
 
           <button
             type="button"
-            className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-slate-200 bg-white text-brand-950 lg:hidden"
+            className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-slate-200 bg-white text-brand-950 xl:hidden"
             aria-label={open ? 'Close menu' : 'Open menu'}
             onClick={() => setOpen((value) => !value)}
           >
@@ -88,7 +90,7 @@ const Navbar = () => {
               initial={{ opacity: 0, height: 0 }}
               animate={{ opacity: 1, height: 'auto' }}
               exit={{ opacity: 0, height: 0 }}
-              className="overflow-hidden border-t border-slate-200/70 px-4 pb-4 lg:hidden"
+              className="overflow-hidden border-t border-slate-200/70 px-4 pb-4 xl:hidden"
             >
               <div className="flex flex-col gap-2 pt-4">
                 {navigation.map((item) => (

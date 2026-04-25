@@ -75,7 +75,7 @@ const BlogPage = () => {
                   return (
                     <div key={item.title} className="rounded-[1.5rem] bg-white p-5 shadow-sm">
                       <div className="flex items-start gap-4">
-                        <div className="flex h-10 w-10 items-center justify-center rounded-2xl bg-brand-100 text-brand-700">
+                        <div className="flex h-10 w-10 items-center justify-center rounded-2xl bg-brand-100 text-brand-700 p-2.5">
                           <Icon size={18} />
                         </div>
                         <div>

@@ -178,7 +178,7 @@ const ServicesPage = () => {
                   <Reveal key={model.title} delay={index * 0.08}>
                     <div className="rounded-[1.5rem] bg-white p-5 shadow-sm">
                       <div className="flex items-start gap-4">
-                        <div className="mt-1 flex h-10 w-10 items-center justify-center rounded-2xl bg-brand-100 text-brand-700">
+                        <div className="mt-1 flex h-10 w-10 items-center justify-center rounded-2xl bg-brand-100 text-brand-700 p-2.5">
                           <BriefcaseBusiness size={18} />
                         </div>
                         <div>
@@ -211,7 +211,7 @@ const ServicesPage = () => {
 
               <div className="mt-8 rounded-[1.5rem] bg-white p-5 shadow-sm">
                 <div className="flex items-start gap-4">
-                  <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-brand-950 text-white">
+                  <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-brand-950 text-white p-2.5">
                     <Rocket size={18} />
                   </div>
                   <div>

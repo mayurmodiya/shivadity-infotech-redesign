@@ -14,10 +14,10 @@ import {
 
 export const company = {
   name: 'Shivaditya Infotech',
-  email: 'shivadityainfotech@gmail.com',
+  email: 'info@shivadityainfotech.com',
   phone: '+91 96623 58364',
   address: 'Ahmedabad, Gujarat, India',
-  tagline: 'Engineering digital products with clarity, speed, and trust.',
+  tagline: '',//Engineering digital products with clarity, speed, and trust.
   description:
     'Shivaditya Infotech helps startups and growing businesses launch web platforms, mobile apps, and digital systems with modern engineering, UX-led thinking, and long-term product support.',
 };
@@ -92,24 +92,272 @@ export const services = [
 
 export const projects = [
   {
-    title: 'HealthTrack Platform',
-    category: 'Healthcare SaaS',
-    summary: 'A patient engagement platform with appointment flows, analytics dashboards, and care-team communication tools.',
-    results: ['38% faster onboarding', 'Real-time reporting suite', 'HIPAA-ready architecture approach'],
+    slug: 'healthcare-solutions',
+    title: 'Healthcare Solutions',
+    category: 'Healthcare',
+    summary: 'Patient-focused healthcare apps and digital care platforms built to improve engagement, symptom tracking, education, and operational clarity.',
+    results: ['Patient empowerment', 'Data-driven care insights', 'Secure healthcare product design'],
+    liveSource: 'https://shivadityainfotech.com/healthcare/',
+    intro:
+      'We build healthcare products that make complex health journeys easier to understand, track, and manage for both patients and care-driven organizations.',
+    challenge:
+      'Healthcare products need to balance usability, trust, privacy, and meaningful insight. Many patient-facing tools fail because they are either too clinical, too generic, or too difficult for users to engage with consistently.',
+    solution:
+      'Our healthcare approach focuses on patient-centered UX, secure data flows, symptom and lifestyle tracking, and insight-rich interfaces that help users understand their health better while supporting long-term engagement.',
+    features: ['Symptom and health event tracking', 'Personalized reports and dashboards', 'Educational content and self-guided resources', 'Secure user data and privacy-focused workflows'],
+    outcomes: ['Higher user engagement', 'Better health awareness', 'More useful patient-facing digital experiences'],
+    detailIntro:
+      'For healthcare products, success depends on more than feature delivery. The experience must feel clear, supportive, and trustworthy enough for users to return to it during difficult or sensitive moments. That is where design, product thinking, and technical execution need to work together.',
+    caseStudies: [
+      {
+        title: 'Migraine Tracker App',
+        subtitle: 'Empowering patients, supporting better migraine management',
+        summary:
+          'This product was designed as a digital migraine companion that helps users move beyond a basic headache diary and toward a more informed, personalized understanding of their condition.',
+        challenge:
+          'Migraine sufferers often struggle to identify patterns across symptoms, triggers, treatment effectiveness, and relief methods. Many existing tools feel too manual or too limited to support daily use.',
+        approach:
+          'We approached the app as both a tracking tool and a patient empowerment platform. The experience needed to be simple enough for everyday use while still capturing meaningful health data in a structured way.',
+        highlights: [
+          'Seamless symptom tracking with triggers, symptoms, treatments, and relief logging',
+          'Interactive visualizations and reports to reveal patterns and possible triggers',
+          'Trusted migraine education resources to support self-management',
+          'Privacy-focused product thinking with careful handling of personal health data',
+        ],
+      },
+      {
+        title: 'Gut Solution App',
+        subtitle: 'A personalized gut health companion for better daily decisions',
+        summary:
+          'Gut Solution was envisioned as a more intelligent wellness product that helps users connect food, mood, sleep, and digestive symptoms through one guided experience.',
+        challenge:
+          'People trying to improve gut health often receive fragmented advice and struggle to understand how daily habits actually affect their well-being over time.',
+        approach:
+          'We shaped the app around personalization, expert-backed content, and easy lifestyle tracking so users could act on real insights instead of vague recommendations.',
+        highlights: [
+          'Food, symptom, mood, and sleep tracking for personalized analysis',
+          'Insight into food-to-gut relationships and digestive patterns',
+          'Tailored meal suggestions, educational content, and healthy living tips',
+          'A collaborative product approach informed by nutrition and wellness expertise',
+        ],
+      },
+    ],
   },
   {
-    title: 'FleetCore Dashboard',
-    category: 'Logistics Tech',
-    summary: 'A dispatch and fleet monitoring dashboard with live status tracking, route insights, and executive reporting.',
-    results: ['65% less manual coordination', 'Unified ops dashboard', 'Role-based access control'],
+    slug: 'fitness-and-sports-apps',
+    title: 'Fitness and Sports Apps',
+    category: 'Fitness & Sports',
+    summary: 'Personalized fitness and sports products built around training, motivation, community engagement, and measurable performance progress.',
+    results: ['Personalized training', 'Motivation-driven engagement', 'Performance insights'],
+    liveSource: 'https://shivadityainfotech.com/fitness-and-sports/',
+    intro:
+      'We build fitness and sports products that keep users motivated with personalized training, progress visibility, and interactive experiences that support long-term engagement.',
+    challenge:
+      'Fitness products must combine coaching, progress tracking, payments, motivation, and community features in one consistent experience without becoming overwhelming for users.',
+    solution:
+      'Our approach focuses on personalized workout delivery, data-backed progress tracking, community engagement, and seamless premium subscription experiences across mobile apps.',
+    features: ['On-demand workouts and video libraries', 'Progress dashboards and body metrics', 'Community challenges and rewards', 'Subscription and payment integrations'],
+    outcomes: ['Stronger user motivation', 'Better fitness retention', 'More valuable digital membership experiences'],
+    detailIntro:
+      'Fitness products succeed when they do more than deliver workout content. They need to keep users motivated, help them measure progress, and create a sense of momentum that encourages regular use. That means product design has to support both performance and emotion.',
+    caseStudies: [
+      {
+        title: 'Fitness App',
+        subtitle: 'A personalized fitness platform designed to motivate, guide, and retain users',
+        summary:
+          'This fitness app was designed as a complete digital training companion with personalized workouts, measurement tracking, community mechanics, and premium subscription support.',
+        challenge:
+          'Many fitness apps struggle to keep users engaged because they offer generic content, weak progress visibility, or disconnected subscription experiences. The product needed to feel motivating, personal, and easy to use every day.',
+        approach:
+          'We treated the app as both a fitness utility and an engagement platform, combining personalized training tools, progress tracking, community interaction, and smooth monetization into one cohesive experience.',
+        highlights: [
+          'Curated on-demand workout library across different fitness levels and goals',
+          'Body measurement tracking, HealthKit sync, and detailed progress reporting',
+          'Points, rewards, and interactive challenges to strengthen user motivation',
+          'Flexible premium subscriptions with secure multi-gateway payment support',
+        ],
+      },
+    ],
   },
   {
-    title: 'EduSpark Mobile Suite',
-    category: 'EdTech App',
-    summary: 'A mobile-first learning product with student progress, video modules, payment flows, and notifications.',
-    results: ['4.8 user rating target', 'Subscription-ready system', 'Reusable content modules'],
+    slug: 'social-media-platforms',
+    title: 'Social Media Platforms',
+    category: 'Social Media',
+    summary: 'Custom social media platforms built for community engagement, real-time interaction, content sharing, and scalable user growth.',
+    results: ['Real-time communication', 'Community engagement', 'Scalable social architecture'],
+    liveSource: 'https://shivadityainfotech.com/social-media/',
+    intro:
+      'We design and develop social media applications that help people connect, engage, share content, and build communities through seamless digital experiences.',
+    challenge:
+      'Social products need to support fast interaction, rich media, personalization, moderation, and performance at scale while still feeling intuitive for every user.',
+    solution:
+      'Our social app approach combines engaging UI/UX, real-time features, scalable backend architecture, and community-focused functionality to support stronger retention and interaction.',
+    features: ['User profiles and authentication', 'Chat, feeds, and media sharing', 'Push notifications and social interactions', 'Privacy controls and moderation systems'],
+    outcomes: ['Higher engagement potential', 'Stronger community retention', 'Scalable social product foundation'],
+    detailIntro:
+      'Great social products are not built around features alone. They succeed when content, interaction, identity, and community mechanics come together in a way that feels natural, active, and rewarding to use regularly.',
+    caseStudies: [
+      {
+        title: 'Social Media App Development',
+        subtitle: 'Building social platforms that connect people and drive engagement',
+        summary:
+          'This solution area focuses on custom social media products ranging from niche communities to large-scale engagement platforms with real-time communication, media sharing, and strong user interaction patterns.',
+        challenge:
+          'Launching a social platform requires more than a timeline and a feed. It needs thoughtful product design, strong backend foundations, reliable messaging systems, content moderation, privacy controls, and room to scale as users grow.',
+        approach:
+          'We approach social apps as living ecosystems. That means balancing intuitive user experiences with scalable architecture, monetization opportunities, moderation tools, and features that support habit-forming engagement.',
+        highlights: [
+          'Custom social networking platforms, community apps, and fan engagement experiences',
+          'Real-time chat, messaging, feeds, hashtags, likes, comments, and media sharing',
+          'Privacy settings, moderation features, and secure account management',
+          'Cross-platform product delivery with monetization support through subscriptions, ads, or in-app purchases',
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'real-estate-solutions',
+    title: 'Real Estate Solutions',
+    category: 'Real Estate',
+    summary: 'AI-enhanced real estate products built for property discovery, smarter valuation, lead generation, and operational visibility.',
+    results: ['AI-assisted valuation', 'Market transparency', 'Smarter property decisions'],
+    liveSource: 'https://shivadityainfotech.com/real-estate/',
+    intro:
+      'We create real estate products that help users evaluate properties faster, reduce uncertainty, and make better buying or selling decisions with digital confidence.',
+    challenge:
+      'Real estate users often rely on slow, manual, or inconsistent valuation processes that create uncertainty during buying, selling, and property comparison.',
+    solution:
+      'Our approach combines property-focused UX, location-aware data models, image-based analysis, and market intelligence to create more useful and transparent real estate experiences.',
+    features: ['AI-powered property valuation tools', 'Photo-based property analysis', 'Market data and comparable listing insights', 'Location-aware pricing intelligence'],
+    outcomes: ['Faster valuation decisions', 'Greater pricing transparency', 'More informed buying and selling journeys'],
+    detailIntro:
+      'Real estate products become more valuable when they reduce uncertainty. For buyers, sellers, and property-focused businesses, the biggest opportunity often lies in turning complex market data into fast, understandable, and trustworthy user experiences.',
+    caseStudies: [
+      {
+        title: 'AI-Powered Property Valuation App',
+        subtitle: 'Giving users faster, smarter property insights with minimal friction',
+        summary:
+          'This real estate app was positioned as a digital valuation assistant that helps users estimate property value instantly using location intelligence, image-based condition analysis, and local market context.',
+        challenge:
+          'Traditional valuation processes are often time-consuming, inconsistent, and dependent on manual appraisals. Users want quicker answers, but they still need results that feel credible and data-informed.',
+        approach:
+          'We designed the app around simplicity and trust: enable location, capture a property image, and generate a valuation experience backed by contextual market inputs and intelligent analysis.',
+        highlights: [
+          'Instant property valuation powered by AI, location, and market-aware logic',
+          'Photo-based property condition analysis for more informed estimates',
+          'Access to comparable listings and historical market context',
+          'A user-friendly experience that reduces friction in early real estate decision-making',
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'logistics-platforms',
+    title: 'Logistics Platforms',
+    category: 'Logistics',
+    summary: 'Global logistics platforms built to simplify shipment creation, provider coordination, live tracking, and operational transparency.',
+    results: ['Global shipment visibility', 'Provider connectivity', 'Operational transparency'],
+    liveSource: 'https://shivadityainfotech.com/logistic/',
+    intro:
+      'We build logistics products that help businesses simplify shipping, connect with providers faster, and track operations with more confidence from origin to delivery.',
+    challenge:
+      'Logistics businesses often struggle with disconnected provider communication, fragmented shipment data, and weak visibility across the shipping lifecycle.',
+    solution:
+      'Our logistics approach focuses on centralized shipment creation, real-time provider communication, end-to-end tracking, and a more transparent experience for logistics-driven businesses.',
+    features: ['Shipment creation and provider matching', 'Real-time chat and tracking', 'Manifest, invoice, and communication history', 'Operational dashboards and visibility tools'],
+    outcomes: ['Simplified logistics coordination', 'Better shipment control', 'Stronger day-to-day operational clarity'],
+    detailIntro:
+      'In logistics, speed and visibility matter as much as execution. The best platforms do more than move shipment data around. They reduce friction between companies and providers, make status updates easier to follow, and help teams stay in control of complex operations.',
+    caseStudies: [
+      {
+        title: 'Global Logistics Platform',
+        subtitle: 'Connecting businesses and logistics providers through one streamlined shipping experience',
+        summary:
+          'This platform was designed as a global logistics companion that helps companies create shipments, connect with pre-vetted providers, communicate in real time, and monitor deliveries through a unified operational interface.',
+        challenge:
+          'Businesses managing international shipping often face delays and confusion due to fragmented provider communication, limited transparency, manual coordination, and disconnected tracking systems.',
+        approach:
+          'We shaped the product around operational simplicity: easy onboarding, fast shipment creation, real-time provider conversations, and detailed visibility across shipment progress, status, and supporting documents.',
+        highlights: [
+          'Fast company onboarding with access to a broad provider network',
+          'Real-time provider chat for negotiation and shipment coordination',
+          'Shipment creation workflows with route, cargo, and timing details',
+          'Live tracking, manifests, invoices, and communication history in one place',
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'erp-solutions',
+    title: 'ERP Solutions',
+    category: 'ERP',
+    summary: 'Custom ERP software built to unify operations, automate workflows, and give businesses real-time visibility across critical departments.',
+    results: ['Unified operations', 'Workflow automation', 'Real-time business visibility'],
+    liveSource: 'https://shivadityainfotech.com/erp/',
+    intro:
+      'We build ERP solutions that bring finance, HR, inventory, sales, and operational workflows into one connected system designed around how your business actually works.',
+    challenge:
+      'As businesses grow, disconnected tools and manual processes create delays, duplicate work, reporting gaps, and poor visibility across departments.',
+    solution:
+      'Our ERP approach focuses on modular architecture, workflow-specific customization, secure role-based access, and dashboards that help teams manage operations with more control and less manual effort.',
+    features: ['Finance, HR, inventory, and CRM modules', 'Role-based dashboards and reporting', 'System integrations and deployment flexibility', 'Web and mobile ERP access'],
+    outcomes: ['Lower operational friction', 'More accurate reporting', 'Better cross-department coordination'],
+    detailIntro:
+      'ERP systems are most effective when they reflect the reality of how a business operates, not just a generic software template. That means the product needs to fit actual workflows, users, approvals, and reporting needs across departments.',
+    caseStudies: [
+      {
+        title: 'Custom ERP Software Development',
+        subtitle: 'A tailored ERP platform designed to streamline business operations end to end',
+        summary:
+          'This ERP solution area focuses on building secure, scalable, and fully customized enterprise systems that connect finance, HR, inventory, projects, sales, and customer management into one operational environment.',
+        challenge:
+          'Businesses often rely on separate tools for accounting, payroll, inventory, CRM, and project coordination. Over time this creates duplicated effort, errors, weak reporting, and poor visibility across teams.',
+        approach:
+          'We approach ERP development as a business transformation layer, designing modules around real workflows, integrating with existing systems where needed, and delivering a structure that can scale with organizational growth.',
+        highlights: [
+          'Custom ERP architecture tailored to real business workflows',
+          'Support for web, mobile, cloud, or on-premise deployment models',
+          'Modules for analytics, inventory, HR, finance, CRM, and project management',
+          'Third-party integrations, enterprise security, and post-launch support',
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'business-apps',
+    title: 'Business Apps',
+    category: 'Business Applications',
+    summary: 'Tailored business apps for internal teams, client operations, service workflows, and productivity-focused digital transformation.',
+    results: ['Internal productivity', 'Custom workflows', 'Scalable business tools'],
+    liveSource: 'https://shivadityainfotech.com/business-apps/',
+    intro:
+      'Custom business apps are often the fastest way to improve team productivity when off-the-shelf tools no longer fit the way a company actually operates.',
+    challenge:
+      'Many companies continue using spreadsheets or generic SaaS products long after their workflows become too specific, too manual, or too slow.',
+    solution:
+      'We build focused business applications for internal teams, client processes, workflow visibility, and operational efficiency across multiple business functions.',
+    features: ['Internal workflow dashboards', 'Client and operations portals', 'Role-specific toolsets', 'Reporting and performance visibility'],
+    outcomes: ['Higher team productivity', 'Better process control', 'More scalable internal systems'],
+  },
+  {
+    slug: 'lifestyle-apps',
+    title: 'Lifestyle Apps',
+    category: 'Lifestyle',
+    summary: 'Feature-rich apps for wellness, travel, productivity, personal habits, and everyday services with strong UI and retention-focused experiences.',
+    results: ['Daily-use engagement', 'Modern UI/UX', 'Subscription-ready flows'],
+    liveSource: 'https://shivadityainfotech.com/lifestyle/',
+    intro:
+      'Lifestyle products need to feel intuitive, visually engaging, and useful enough to become part of a user’s regular routine.',
+    challenge:
+      'These products often need to combine personal utility, habit-forming UX, reminders, subscriptions, and personalized experiences without becoming cluttered.',
+    solution:
+      'We create lifestyle apps focused on retention, smooth onboarding, personalized journeys, and modern interaction patterns across mobile and web.',
+    features: ['Personalized dashboards and reminders', 'Subscription and payment flows', 'Progress tracking and analytics', 'Content, utility, or habit-based experiences'],
+    outcomes: ['Higher day-to-day engagement', 'Better retention loops', 'More polished consumer-facing products'],
   },
 ];
+
+export const getProjectBySlug = (slug) => projects.find((project) => project.slug === slug);
 
 export const testimonials = [
   {
@@ -152,9 +400,7 @@ export const processSteps = [
 ];
 
 export const socialLinks = [
-  { label: 'LinkedIn', href: 'https://www.linkedin.com' },
-  { label: 'Instagram', href: 'https://www.instagram.com' },
-  { label: 'Facebook', href: 'https://www.facebook.com' },
+  { label: 'LinkedIn', href: 'https://www.linkedin.com/company/shivaditya-infotech/' },
 ];
 
 export const blogPosts = [

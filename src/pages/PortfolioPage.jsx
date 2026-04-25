@@ -17,8 +17,8 @@ const PortfolioPage = () => {
         <Reveal>
           <SectionHeading
             badge="Portfolio"
-            title="Work shaped around usability, operations, and growth"
-            description="Use this structure to publish real client stories over time. The current content is intentionally presentation-ready and easy to replace with actual case studies."
+            title="Industry-focused digital solutions across high-demand business domains"
+            description="This portfolio now highlights the actual sectors Shivaditya Infotech serves, with direct links to your live industry pages for healthcare, fitness, social media, real estate, logistics, ERP, business apps, and lifestyle solutions."
           />
         </Reveal>
       </section>
