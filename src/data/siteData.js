@@ -355,7 +355,178 @@ export const projects = [
     features: ['Personalized dashboards and reminders', 'Subscription and payment flows', 'Progress tracking and analytics', 'Content, utility, or habit-based experiences'],
     outcomes: ['Higher day-to-day engagement', 'Better retention loops', 'More polished consumer-facing products'],
   },
+  {
+    slug: 'play-amigos',
+    title: 'Play Amigos',
+    category: 'Sports & Fitness',
+    summary: 'A mobile app that helps players find local games, book venues, and build teams faster with location-based discovery, skill matching, and in-app chat.',
+    results: ['Faster match-making', 'Simpler team formation', 'Stronger local community'],
+    liveSource: 'https://staging.playamigos.games/',
+    intro:
+      'Play Amigos is a sports-connection mobile app designed to remove the friction of finding teammates, joining nearby games, and securing venues—whether you are new in town or just want to play more often.',
+    challenge:
+      'People want to play, but coordinating is hard: discovering nearby games is fragmented across chats and groups, skill expectations are unclear, and booking venues adds extra steps that cause drop-offs.',
+    solution:
+      'We structured the product around a simple loop: sign up → discover games → join or create a match → fill spots → chat and play. Each flow is optimized for mobile clarity with location-based listings, skill cues, and streamlined venue booking.',
+    features: [
+      'Easy sign-up with location and skill level setup',
+      'Nearby games discovery with filters by sport and schedule',
+      'Join games and request to participate',
+      'Create a game and post player requirements',
+      'Venue booking with sport, player count, and preferences',
+      'In-app chat to coordinate with teammates',
+      'Team formation tools to review and accept player requests',
+    ],
+    outcomes: ['No-hassle player discovery', 'Inclusive experience for all levels', 'Flexible play: casual to competitive'],
+    detailIntro:
+      'Play Amigos is designed for repeated, real-world use. The experience needs to be fast on mobile, easy to understand in seconds, and structured around clear actions (join, create, book, chat) so players can move from intent to a confirmed game without unnecessary back-and-forth.',
+    caseStudies: [
+      {
+        title: 'Play Amigos: Your Ultimate Sports Connection App',
+        subtitle: 'Helping players join games, book venues, and build teams in minutes',
+        summary:
+          'Play Amigos connects local players with nearby games and available venues. Users can join existing matches, create their own game, post the skill levels they need, and coordinate details through chat—making it easier to play more often with less planning overhead.',
+        challenge:
+          'Most sports coordination happens in scattered groups. Players do not know who is available, what skill level is expected, or where to play. Venue booking is usually disconnected from team formation, which creates drop-offs and last-minute cancellations.',
+        approach:
+          'We built a mobile-first flow that keeps decisions simple: capture location and skill early, surface nearby games, provide clear “join” and “create” actions, and unify venue booking and team fill inside one guided experience. Chat is integrated at the moment it matters—after intent is confirmed.',
+        highlights: [
+          'Quick onboarding with location + skill matching signals',
+          'Nearby sports discovery with joinable listings',
+          'Create-a-game flow with player requirements and approvals',
+          'Venue booking embedded into the match setup process',
+          'In-app chat for coordination and community building',
+          'Supports casual and competitive play preferences',
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'dirty-100',
+    title: 'Dirty100',
+    category: 'Sports & Community',
+    summary: 'The premier ranking system and community platform for the motocross industry, featuring dynamic leaderboards and weighted performance tracking.',
+    results: ['Elite rider rankings', 'Performance analytics', 'Community engagement'],
+    liveSource: 'https://www.dirty100.com/home',
+    intro: 'Dirty100 is the definitive authority in motocross performance tracking, providing a meritocratic leaderboard that recognizes the most successful amateur and professional riders.',
+    challenge: 'The motocross industry lacked a unified, weighted ranking system that could fairly compare rider performance across different event types and classes. The client needed a platform that felt as "high-octane" as the sport itself while handling complex data aggregation.',
+    solution: 'We engineered a high-performance web platform with a custom point calculation engine that weights events based on prestige. The interface uses a dark-mode aesthetic with neon accents to match the motocross brand identity, delivering real-time rankings and historical performance data.',
+    features: [
+      'Custom Point Calculation Engine',
+      'Dynamic Leaderboards with class filtering',
+      'Weighted Event Management system',
+      'Historical performance data comparison',
+      'Mobile-first responsive interface',
+      'Searchable rider and event database',
+    ],
+    outcomes: [
+      'Established a definitive ranking authority',
+      'Increased community engagement via leaderboard tracking',
+      'Simplified event results management',
+    ],
+    detailIntro: 'For Dirty100, the data is the product. Every ranking, point, and event weight must be calculated with precision and presented in a way that resonates with the competitive spirit of motocross fans and riders.',
+    caseStudies: [
+      {
+        title: 'The "Winningest" Ranking Engine',
+        subtitle: 'Turning race results into merit-based status',
+        summary: 'At the heart of Dirty100 is a custom algorithm that transforms raw event data into a prestigious "winningest" list.',
+        challenge: 'Not all wins are equal. A win at a regional event shouldn\'t carry the same weight as a win at a national major like Daytona.',
+        approach: 'We developed a weighted scoring system where each event is assigned a multiplier based on its significance. This ensures the Dirty100 list truly represents the elite tier of the sport.',
+        highlights: [
+          'Variable event weights for fair ranking',
+          'Real-time leaderboard updates',
+          'Search and filter by rider class',
+          'Year-over-year performance tracking',
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'desiverse',
+    title: 'Desiverse',
+    category: 'Community & Services',
+    summary: 'The ultimate platform for the Desi community to connect, share, and thrive abroad with verified services like rides, roommates, and events.',
+    results: ['Verified community network', 'Centralized essential services', 'Enhanced safety & trust'],
+    liveSource: 'https://desiverse.fedbidllc.com/',
+    intro: 'Desiverse is a comprehensive, community-driven platform designed specifically for the Indian diaspora living abroad, serving as a central hub for essential services and networking.',
+    challenge: 'Indians living abroad often face difficulties finding trusted services and community support in a new country. Existing platforms often lack the necessary safety verification and community focus needed for sensitive services like carpooling and housing.',
+    solution: 'We developed a secure, unified platform with mandatory user verification (Face ID/ID) that connects the Desi community through specialized sections for rides, roommates, events, and interest-based circles.',
+    features: [
+      'Verified Rides & Carpooling',
+      'Shared Housing & Roommate Discovery',
+      'Cultural Events Discovery',
+      'Interest-based Desi Circles',
+      'Localized Marketplace Classifieds',
+      'Identity Verification System',
+    ],
+    outcomes: [
+      'Built a trusted social network',
+      'Simplified expatriate transitions',
+      'Improved community safety and support',
+    ],
+    detailIntro: 'Desiverse prioritizes trust and accessibility. By combining essential lifestyle services with a robust verification layer, the platform helps users navigate life abroad with the confidence of a supportive community behind them.',
+    caseStudies: [
+      {
+        title: 'Connecting the Indian Desiverse',
+        subtitle: 'A secure, all-in-one ecosystem for Indians living abroad',
+        summary: 'Desiverse bridges the gap for the Desi community by providing a centralized, verified platform for carpooling, housing, and social networking, ensuring every interaction is backed by trust.',
+        challenge: 'Moving abroad involves complex hurdles—finding safe transport, reliable roommates, and a sense of belonging. Scattering these needs across unverified social groups often leads to security concerns and fragmented experiences.',
+        approach: 'We built a mobile-first experience centered on safety and community utility. Every feature, from "Desi Circles" to "Verified Rides," was designed to foster meaningful connections while maintaining high security standards through government-issued ID verification.',
+        highlights: [
+          'Mandatory Face ID and ID verification for all users',
+          'Integrated carpooling system for safe, affordable travel',
+          'Specialized housing portal for finding community roommates',
+          'Dynamic event discovery for cultural and professional meetups',
+          'Interest-based networking through Desi Circles',
+          'Mobile-first design for on-the-go community access',
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'chicago-entertainment-services',
+    title: 'Chicago Entertainment Services',
+    category: 'Event Production & Entertainment',
+    summary: 'A premier event production company delivering luxury interactive entertainment, high-energy DJ services, and seamless event planning for unforgettable experiences.',
+    results: ['High-energy engagement', 'Stress-free coordination', 'Innovative event technology'],
+    liveSource: 'https://chicagoentertainmentservices.com/',
+    intro: 'Chicago Entertainment Services (CES) is a full-service event production and entertainment agency that transforms special moments into extraordinary experiences through creative technology and professional coordination.',
+    challenge: 'Event hosts often struggle to balance multiple vendors, technical logistics, and guest engagement. Fragmented services for music, photography, and planning can lead to inconsistent quality and operational stress during high-stakes events.',
+    solution: 'We delivered a unified digital presence and operational framework that highlights CES as a single-source solution for luxury photo booths, professional DJ services, and end-to-end event production.',
+    features: [
+      'Interactive 360 Video Booths',
+      'Mirror Photo Booth Experiences',
+      'Professional DJ & Sound Production',
+      'Full-scale Event Coordination',
+      'Creative Photography & Videography',
+      'Integrated Booking & Planning Tools',
+    ],
+    outcomes: [
+      'Streamlined vendor management for clients',
+      'Increased interactive guest engagement',
+      'Consistent, high-quality event branding',
+    ],
+    detailIntro: 'For Chicago Entertainment Services, the focus is on the intersection of technology and hospitality. By integrating modern interactive elements like 360-degree video with traditional high-end event planning, the platform positions CES as an industry leader in the Chicago event market.',
+    caseStudies: [
+      {
+        title: 'Elevating Event Experiences',
+        subtitle: 'A comprehensive production ecosystem for high-end celebrations',
+        summary: 'CES provides a centralized, tech-driven entertainment solution that simplifies the complex logistics of weddings, corporate events, and private galas while maximizing guest interaction.',
+        challenge: 'Special events require high reliability and "wow" factors. Traditional entertainment often lacks the interactive, shareable digital elements that modern guests expect, while planners struggle to find vendors who can handle both the technical and creative aspects of an event.',
+        approach: 'We built a digital identity and service model centered on "Unforgettable Moments." The experience emphasizes the tactile, interactive nature of their products (like Mirror Booths) alongside the professional reliability of their DJ and planning services, creating a high-trust narrative for premium clients.',
+        highlights: [
+          'Cinematic 360 video booth integration for viral social sharing',
+          'Curated DJ experiences with professional sound and lighting design',
+          'End-to-end event management from concept to teardown',
+          'Interactive mirror booths with customizable digital overlays',
+          'Professional capture of key moments via high-end media teams',
+          'Mobile-responsive platform for client booking and inquiries',
+        ],
+      },
+    ],
+  },
 ];
+
 
 export const getProjectBySlug = (slug) => projects.find((project) => project.slug === slug);
 
