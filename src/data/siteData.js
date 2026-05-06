@@ -10,7 +10,19 @@ import {
   ShoppingCart,
   Smartphone,
   Workflow,
+  Stethoscope,
+  Dumbbell,
+  Users,
+  Home,
+  Truck,
+  Settings,
+  Briefcase,
+  Sun,
+  Trophy,
+  Heart,
+  Music,
 } from 'lucide-react';
+import { portfolioImages } from '../constant/image';
 
 export const company = {
   name: 'Shivaditya Infotech',
@@ -26,10 +38,194 @@ export const navigation = [
   { label: 'Home', href: '/' },
   { label: 'About', href: '/about' },
   { label: 'Services', href: '/services' },
+  { label: 'Industry', href: '/industry' },
   { label: 'Portfolio', href: '/portfolio' },
   { label: 'Blog', href: '/blog' },
   { label: 'Careers', href: '/careers' },
-  { label: 'Contact', href: '/contact' },
+  // { label: 'Contact', href: '/contact' },
+];
+
+export const projects = [
+  {
+    slug: 'play-amigos',
+    title: 'Play Amigos',
+    category: 'Sports Community App',
+    summary: 'A mobile-first platform to join games, create matches, book venues, and chat with teammates — all in one guided flow.',
+    coverImage: portfolioImages.playAmigos,
+    services: ['UI/UX', 'Mobile App Development', 'Backend APIs'],
+    techStack: ['React Native', 'Node.js', 'PostgreSQL', 'Firebase Notifications'],
+    highlights: [
+      'Location + skill-based discovery',
+      'Create-a-game flow with approvals',
+      'Venue booking embedded into setup',
+      'In-app chat and match coordination',
+    ],
+    detail: {
+      context:
+        'Sports coordination usually happens across scattered groups and messages. The goal was to reduce planning friction while keeping the experience lightweight and social.',
+      challenge:
+        'Users needed to quickly understand who is playing, where to meet, and what skill level is expected — without long forms or confusing steps.',
+      solution:
+        'We designed a guided match creation and discovery experience with early intent signals (location + skill), clear join/create actions, and chat at the moment commitment is confirmed.',
+      outcomes: [
+        'Faster time-to-join for new users',
+        'Fewer drop-offs during match setup',
+        'Clearer expectations via skill signals',
+      ],
+    },
+  },
+  {
+    slug: 'dirty100',
+    title: 'Dirty100',
+    category: 'Motocross Ranking Platform',
+    summary: 'A high-performance web platform with a custom point calculation engine and real-time leaderboards.',
+    coverImage: portfolioImages.dirty100,
+    services: ['Web App Development', 'Product Engineering', 'UI/UX'],
+    techStack: ['React', 'Node.js', 'PostgreSQL', 'Redis'],
+    highlights: [
+      'Custom weighted scoring algorithm',
+      'Searchable rider and event database',
+      'Class filters + historical analytics',
+      'Mobile-first dark UI patterns',
+    ],
+    detail: {
+      context:
+        'The client needed a unified ranking system that felt credible, fast, and exciting for a high-energy sports audience.',
+      challenge:
+        'Complex scoring rules and large datasets required both correctness and speed, especially on mobile.',
+      solution:
+        'We built a modular calculation engine, optimized queries and caching, and paired it with a bold interface for rapid browsing and filtering.',
+      outcomes: [
+        'Reliable leaderboard updates',
+        'Faster page loads on mobile',
+        'Clear, trustworthy rankings display',
+      ],
+    },
+  },
+  {
+    slug: 'migraine-tracker',
+    title: 'Migraine Tracker',
+    category: 'Healthcare App',
+    summary: 'A patient-friendly tracking experience for symptoms, triggers, patterns, and shareable reports.',
+    coverImage: portfolioImages.migraineTracker,
+    services: ['Mobile App Development', 'UI/UX', 'Data Visualization'],
+    techStack: ['Flutter', 'Firebase', 'Cloud Functions'],
+    highlights: [
+      'Daily symptom + trigger tracking',
+      'Pattern insights and summaries',
+      'Exportable reports for clinicians',
+      'Privacy-first data approach',
+    ],
+    detail: {
+      context:
+        'Users needed a calmer, more supportive alternative to basic headache diaries with better insight and reporting.',
+      challenge:
+        'Health logging must be quick enough for daily use while still capturing meaningful detail.',
+      solution:
+        'We created a low-friction logging flow, gentle data visualizations, and a report format that’s easy to share during appointments.',
+      outcomes: ['Higher tracking consistency', 'Better trigger awareness', 'More useful clinical conversations'],
+    },
+  },
+  {
+    slug: 'ecommerce-replatform',
+    title: 'Ecommerce Replatform',
+    category: 'Commerce Experience',
+    summary: 'A faster storefront experience with improved product discovery, checkout UX, and operational visibility.',
+    coverImage: portfolioImages.ecommerceReplatform,
+    services: ['Ecommerce Development', 'Web App Development', 'UI/UX'],
+    techStack: ['React', 'Headless CMS', 'Stripe', 'Node.js'],
+    highlights: [
+      'Faster category + search browsing',
+      'Checkout UX improvements',
+      'SEO-ready product templates',
+      'Analytics-friendly event tracking',
+    ],
+    detail: {
+      context:
+        'The focus was modernizing the buying journey while keeping merchandising control simple for the business team.',
+      challenge:
+        'Legacy templates and slow pages were hurting conversion and making updates too time-consuming.',
+      solution:
+        'We introduced a component-based storefront, improved search and merchandising patterns, and streamlined the checkout flow for fewer steps.',
+      outcomes: ['Improved conversion readiness', 'Faster content updates', 'Smoother mobile checkout'],
+    },
+  },
+  {
+    slug: 'logistics-ops-dashboard',
+    title: 'Logistics Ops Dashboard',
+    category: 'Operations Dashboard',
+    summary: 'A role-based dashboard for tracking orders, dispatch status, and exception handling in one place.',
+    coverImage: portfolioImages.logisticsOpsDashboard,
+    services: ['Custom Software', 'Web App Development', 'UI/UX'],
+    techStack: ['React', 'Node.js', 'PostgreSQL', 'Maps API'],
+    highlights: [
+      'Role-based access and views',
+      'Order + dispatch tracking timelines',
+      'Exception queues and quick actions',
+      'Map-assisted visibility',
+    ],
+    detail: {
+      context:
+        'Operations teams needed a single source of truth for shipments, driver status, and customer updates.',
+      challenge:
+        'Information was fragmented across spreadsheets and messages, slowing responses to exceptions.',
+      solution:
+        'We designed a clean dashboard with timelines, queue-based workflows, and map context so teams can resolve issues faster.',
+      outcomes: ['Faster exception resolution', 'Higher operational visibility', 'Reduced manual coordination'],
+    },
+  },
+  {
+    slug: 'saas-design-refresh',
+    title: 'SaaS Design Refresh',
+    category: 'Product UI Modernization',
+    summary: 'A UI refresh that improves clarity, hierarchy, and consistency across core SaaS workflows.',
+    coverImage: portfolioImages.saasDesignRefresh,
+    services: ['UI/UX', 'Frontend Engineering'],
+    techStack: ['React', 'Tailwind CSS', 'Framer Motion'],
+    highlights: [
+      'Design tokens + component library',
+      'Improved IA and navigation',
+      'Accessibility-minded color/contrast',
+      'Motion that feels premium, not busy',
+    ],
+    detail: {
+      context:
+        'The product had strong functionality but the UI felt dated and inconsistent, hurting user confidence and onboarding.',
+      challenge:
+        'The redesign needed to be incremental, minimizing disruption while increasing perceived quality.',
+      solution:
+        'We introduced a small design system, refactored key screens, and added subtle motion and state clarity throughout the experience.',
+      outcomes: ['More consistent UI', 'Clearer user flows', 'Higher perceived product quality'],
+    },
+  },
+  {
+    slug: 'desiverse',
+    title: 'Desiverse',
+    category: 'Community Ecosystem',
+    summary: 'A unified platform connecting the Indian diaspora with essential services and community support through a verified and secure network.',
+    coverImage: portfolioImages.desiverse,
+    services: ['UI/UX Design', 'Web App Development', 'Community Platform'],
+    techStack: ['React', 'Node.js', 'MongoDB', 'Express'],
+    highlights: [
+      'Verified Face ID & ID authentication',
+      'Integrated carpooling & housing systems',
+      'Interest-based networking (Desi Circles)',
+      'Real-time event discovery & classifieds',
+    ],
+    detail: {
+      context:
+        'The Indian diaspora abroad often faces challenges finding safe transport, reliable roommates, and a sense of belonging in a new country.',
+      challenge:
+        'Information is often fragmented across unverified social groups, leading to security concerns and difficulty in building trust.',
+      solution:
+        'We built a secure, all-in-one ecosystem centered on safety, using mandatory verification and specialized portals for essential community needs.',
+      outcomes: [
+        'Higher trust through mandatory verification',
+        'Simplified access to shared community resources',
+        'Stronger sense of belonging for Indians abroad',
+      ],
+    },
+  },
 ];
 
 export const stats = [
@@ -90,13 +286,14 @@ export const services = [
   },
 ];
 
-export const projects = [
+export const industry = [
   {
     slug: 'healthcare-solutions',
     title: 'Healthcare Solutions',
     category: 'Healthcare',
     summary: 'Patient-focused healthcare apps and digital care platforms built to improve engagement, symptom tracking, education, and operational clarity.',
     results: ['Patient empowerment', 'Data-driven care insights', 'Secure healthcare product design'],
+    icon: Stethoscope,
     liveSource: 'https://shivadityainfotech.com/healthcare/',
     intro:
       'We build healthcare products that make complex health journeys easier to understand, track, and manage for both patients and care-driven organizations.',
@@ -149,6 +346,7 @@ export const projects = [
     category: 'Fitness & Sports',
     summary: 'Personalized fitness and sports products built around training, motivation, community engagement, and measurable performance progress.',
     results: ['Personalized training', 'Motivation-driven engagement', 'Performance insights'],
+    icon: Dumbbell,
     liveSource: 'https://shivadityainfotech.com/fitness-and-sports/',
     intro:
       'We build fitness and sports products that keep users motivated with personalized training, progress visibility, and interactive experiences that support long-term engagement.',
@@ -177,6 +375,39 @@ export const projects = [
           'Flexible premium subscriptions with secure multi-gateway payment support',
         ],
       },
+        {
+        title: 'Play Amigos: Your Ultimate Sports Connection App',
+        subtitle: 'Helping players join games, book venues, and build teams in minutes',
+        summary:
+          'Play Amigos connects local players with nearby games and available venues. Users can join existing matches, create their own game, post the skill levels they need, and coordinate details through chat—making it easier to play more often with less planning overhead.',
+        challenge:
+          'Most sports coordination happens in scattered groups. Players do not know who is available, what skill level is expected, or where to play. Venue booking is usually disconnected from team formation, which creates drop-offs and last-minute cancellations.',
+        approach:
+          'We built a mobile-first flow that keeps decisions simple: capture location and skill early, surface nearby games, provide clear “join” and “create” actions, and unify venue booking and team fill inside one guided experience. Chat is integrated at the moment it matters—after intent is confirmed.',
+        highlights: [
+          'Quick onboarding with location + skill matching signals',
+          'Nearby sports discovery with joinable listings',
+          'Create-a-game flow with player requirements and approvals',
+          'Venue booking embedded into the match setup process',
+          'In-app chat for coordination and community building',
+          'Supports casual and competitive play preferences',
+        ],
+      },
+      {
+        title: 'Dirty100: Motocross Performance Tracking',
+        subtitle: 'The premier ranking system and community platform for the motocross industry',
+        summary: 'Dirty100 is a high-performance web platform with a custom point calculation engine that transforms raw event data into a prestigious meritocratic leaderboard for amateur and professional riders.',
+        challenge: 'The industry lacked a unified, weighted ranking system. The client needed a platform that handled complex data aggregation while matching the "high-octane" spirit of the sport.',
+        approach: 'We engineered a custom scoring algorithm to weight events by prestige and delivered a dark-mode interface with real-time rankings and historical performance analytics.',
+        highlights: [
+          'Custom Point Calculation Engine',
+          'Dynamic Leaderboards with class filtering',
+          'Weighted Event Management system',
+          'Historical performance data comparison',
+          'Mobile-first responsive interface',
+          'Searchable rider and event database',
+        ],
+      },
     ],
   },
   {
@@ -185,6 +416,7 @@ export const projects = [
     category: 'Social Media',
     summary: 'Custom social media platforms built for community engagement, real-time interaction, content sharing, and scalable user growth.',
     results: ['Real-time communication', 'Community engagement', 'Scalable social architecture'],
+    icon: Users,
     liveSource: 'https://shivadityainfotech.com/social-media/',
     intro:
       'We design and develop social media applications that help people connect, engage, share content, and build communities through seamless digital experiences.',
@@ -213,6 +445,21 @@ export const projects = [
           'Cross-platform product delivery with monetization support through subscriptions, ads, or in-app purchases',
         ],
       },
+      {
+        title: 'Desiverse: Community Ecosystem',
+        subtitle: 'A secure, all-in-one ecosystem for the Indian diaspora abroad',
+        summary: 'Desiverse is a community-driven platform that connects users through verified services like carpooling, shared housing, and interest-based circles, ensuring every interaction is backed by trust.',
+        challenge: 'Moving abroad involves complex hurdles—finding safe transport, reliable roommates, and a sense of belonging. Scattering these needs across unverified groups leads to security concerns.',
+        approach: 'We built a mobile-first experience centered on safety, using mandatory ID verification and specialized portals for rides, housing, and social networking.',
+        highlights: [
+          'Mandatory Face ID and ID verification for all users',
+          'Integrated carpooling system for safe, affordable travel',
+          'Specialized housing portal for finding community roommates',
+          'Dynamic event discovery for cultural and professional meetups',
+          'Interest-based networking through Desi Circles',
+          'Mobile-first design for on-the-go community access',
+        ],
+      },
     ],
   },
   {
@@ -221,6 +468,7 @@ export const projects = [
     category: 'Real Estate',
     summary: 'AI-enhanced real estate products built for property discovery, smarter valuation, lead generation, and operational visibility.',
     results: ['AI-assisted valuation', 'Market transparency', 'Smarter property decisions'],
+    icon: Home,
     liveSource: 'https://shivadityainfotech.com/real-estate/',
     intro:
       'We create real estate products that help users evaluate properties faster, reduce uncertainty, and make better buying or selling decisions with digital confidence.',
@@ -257,6 +505,7 @@ export const projects = [
     category: 'Logistics',
     summary: 'Global logistics platforms built to simplify shipment creation, provider coordination, live tracking, and operational transparency.',
     results: ['Global shipment visibility', 'Provider connectivity', 'Operational transparency'],
+    icon: Truck,
     liveSource: 'https://shivadityainfotech.com/logistic/',
     intro:
       'We build logistics products that help businesses simplify shipping, connect with providers faster, and track operations with more confidence from origin to delivery.',
@@ -293,6 +542,7 @@ export const projects = [
     category: 'ERP',
     summary: 'Custom ERP software built to unify operations, automate workflows, and give businesses real-time visibility across critical departments.',
     results: ['Unified operations', 'Workflow automation', 'Real-time business visibility'],
+    icon: Settings,
     liveSource: 'https://shivadityainfotech.com/erp/',
     intro:
       'We build ERP solutions that bring finance, HR, inventory, sales, and operational workflows into one connected system designed around how your business actually works.',
@@ -329,6 +579,7 @@ export const projects = [
     category: 'Business Applications',
     summary: 'Tailored business apps for internal teams, client operations, service workflows, and productivity-focused digital transformation.',
     results: ['Internal productivity', 'Custom workflows', 'Scalable business tools'],
+    icon: Briefcase,
     liveSource: 'https://shivadityainfotech.com/business-apps/',
     intro:
       'Custom business apps are often the fastest way to improve team productivity when off-the-shelf tools no longer fit the way a company actually operates.',
@@ -345,6 +596,7 @@ export const projects = [
     category: 'Lifestyle',
     summary: 'Feature-rich apps for wellness, travel, productivity, personal habits, and everyday services with strong UI and retention-focused experiences.',
     results: ['Daily-use engagement', 'Modern UI/UX', 'Subscription-ready flows'],
+    icon: Sun,
     liveSource: 'https://shivadityainfotech.com/lifestyle/',
     intro:
       'Lifestyle products need to feel intuitive, visually engaging, and useful enough to become part of a user’s regular routine.',
@@ -354,173 +606,19 @@ export const projects = [
       'We create lifestyle apps focused on retention, smooth onboarding, personalized journeys, and modern interaction patterns across mobile and web.',
     features: ['Personalized dashboards and reminders', 'Subscription and payment flows', 'Progress tracking and analytics', 'Content, utility, or habit-based experiences'],
     outcomes: ['Higher day-to-day engagement', 'Better retention loops', 'More polished consumer-facing products'],
-  },
-  {
-    slug: 'play-amigos',
-    title: 'Play Amigos',
-    category: 'Sports & Fitness',
-    summary: 'A mobile app that helps players find local games, book venues, and build teams faster with location-based discovery, skill matching, and in-app chat.',
-    results: ['Faster match-making', 'Simpler team formation', 'Stronger local community'],
-    liveSource: 'https://staging.playamigos.games/',
-    intro:
-      'Play Amigos is a sports-connection mobile app designed to remove the friction of finding teammates, joining nearby games, and securing venues—whether you are new in town or just want to play more often.',
-    challenge:
-      'People want to play, but coordinating is hard: discovering nearby games is fragmented across chats and groups, skill expectations are unclear, and booking venues adds extra steps that cause drop-offs.',
-    solution:
-      'We structured the product around a simple loop: sign up → discover games → join or create a match → fill spots → chat and play. Each flow is optimized for mobile clarity with location-based listings, skill cues, and streamlined venue booking.',
-    features: [
-      'Easy sign-up with location and skill level setup',
-      'Nearby games discovery with filters by sport and schedule',
-      'Join games and request to participate',
-      'Create a game and post player requirements',
-      'Venue booking with sport, player count, and preferences',
-      'In-app chat to coordinate with teammates',
-      'Team formation tools to review and accept player requests',
-    ],
-    outcomes: ['No-hassle player discovery', 'Inclusive experience for all levels', 'Flexible play: casual to competitive'],
-    detailIntro:
-      'Play Amigos is designed for repeated, real-world use. The experience needs to be fast on mobile, easy to understand in seconds, and structured around clear actions (join, create, book, chat) so players can move from intent to a confirmed game without unnecessary back-and-forth.',
     caseStudies: [
       {
-        title: 'Play Amigos: Your Ultimate Sports Connection App',
-        subtitle: 'Helping players join games, book venues, and build teams in minutes',
-        summary:
-          'Play Amigos connects local players with nearby games and available venues. Users can join existing matches, create their own game, post the skill levels they need, and coordinate details through chat—making it easier to play more often with less planning overhead.',
-        challenge:
-          'Most sports coordination happens in scattered groups. Players do not know who is available, what skill level is expected, or where to play. Venue booking is usually disconnected from team formation, which creates drop-offs and last-minute cancellations.',
-        approach:
-          'We built a mobile-first flow that keeps decisions simple: capture location and skill early, surface nearby games, provide clear “join” and “create” actions, and unify venue booking and team fill inside one guided experience. Chat is integrated at the moment it matters—after intent is confirmed.',
+        title: 'Chicago Entertainment Services',
+        subtitle: 'Elevating event experiences with tech-driven interactive entertainment',
+        summary: 'A unified digital presence and operational framework for a premier event production company, integrating 360 video booths, professional DJ services, and seamless planning tools.',
+        challenge: 'Event hosts struggled with vendor fragmentation and technical logistics. The client needed a single-source solution that balanced luxury hospitality with modern interactive technology.',
+        approach: 'We built a high-trust digital identity centered on "Unforgettable Moments," emphasizing interactive elements like Mirror Booths alongside reliable professional coordination.',
         highlights: [
-          'Quick onboarding with location + skill matching signals',
-          'Nearby sports discovery with joinable listings',
-          'Create-a-game flow with player requirements and approvals',
-          'Venue booking embedded into the match setup process',
-          'In-app chat for coordination and community building',
-          'Supports casual and competitive play preferences',
-        ],
-      },
-    ],
-  },
-  {
-    slug: 'dirty-100',
-    title: 'Dirty100',
-    category: 'Sports & Community',
-    summary: 'The premier ranking system and community platform for the motocross industry, featuring dynamic leaderboards and weighted performance tracking.',
-    results: ['Elite rider rankings', 'Performance analytics', 'Community engagement'],
-    liveSource: 'https://www.dirty100.com/home',
-    intro: 'Dirty100 is the definitive authority in motocross performance tracking, providing a meritocratic leaderboard that recognizes the most successful amateur and professional riders.',
-    challenge: 'The motocross industry lacked a unified, weighted ranking system that could fairly compare rider performance across different event types and classes. The client needed a platform that felt as "high-octane" as the sport itself while handling complex data aggregation.',
-    solution: 'We engineered a high-performance web platform with a custom point calculation engine that weights events based on prestige. The interface uses a dark-mode aesthetic with neon accents to match the motocross brand identity, delivering real-time rankings and historical performance data.',
-    features: [
-      'Custom Point Calculation Engine',
-      'Dynamic Leaderboards with class filtering',
-      'Weighted Event Management system',
-      'Historical performance data comparison',
-      'Mobile-first responsive interface',
-      'Searchable rider and event database',
-    ],
-    outcomes: [
-      'Established a definitive ranking authority',
-      'Increased community engagement via leaderboard tracking',
-      'Simplified event results management',
-    ],
-    detailIntro: 'For Dirty100, the data is the product. Every ranking, point, and event weight must be calculated with precision and presented in a way that resonates with the competitive spirit of motocross fans and riders.',
-    caseStudies: [
-      {
-        title: 'The "Winningest" Ranking Engine',
-        subtitle: 'Turning race results into merit-based status',
-        summary: 'At the heart of Dirty100 is a custom algorithm that transforms raw event data into a prestigious "winningest" list.',
-        challenge: 'Not all wins are equal. A win at a regional event shouldn\'t carry the same weight as a win at a national major like Daytona.',
-        approach: 'We developed a weighted scoring system where each event is assigned a multiplier based on its significance. This ensures the Dirty100 list truly represents the elite tier of the sport.',
-        highlights: [
-          'Variable event weights for fair ranking',
-          'Real-time leaderboard updates',
-          'Search and filter by rider class',
-          'Year-over-year performance tracking',
-        ],
-      },
-    ],
-  },
-  {
-    slug: 'desiverse',
-    title: 'Desiverse',
-    category: 'Community & Services',
-    summary: 'The ultimate platform for the Desi community to connect, share, and thrive abroad with verified services like rides, roommates, and events.',
-    results: ['Verified community network', 'Centralized essential services', 'Enhanced safety & trust'],
-    liveSource: 'https://desiverse.fedbidllc.com/',
-    intro: 'Desiverse is a comprehensive, community-driven platform designed specifically for the Indian diaspora living abroad, serving as a central hub for essential services and networking.',
-    challenge: 'Indians living abroad often face difficulties finding trusted services and community support in a new country. Existing platforms often lack the necessary safety verification and community focus needed for sensitive services like carpooling and housing.',
-    solution: 'We developed a secure, unified platform with mandatory user verification (Face ID/ID) that connects the Desi community through specialized sections for rides, roommates, events, and interest-based circles.',
-    features: [
-      'Verified Rides & Carpooling',
-      'Shared Housing & Roommate Discovery',
-      'Cultural Events Discovery',
-      'Interest-based Desi Circles',
-      'Localized Marketplace Classifieds',
-      'Identity Verification System',
-    ],
-    outcomes: [
-      'Built a trusted social network',
-      'Simplified expatriate transitions',
-      'Improved community safety and support',
-    ],
-    detailIntro: 'Desiverse prioritizes trust and accessibility. By combining essential lifestyle services with a robust verification layer, the platform helps users navigate life abroad with the confidence of a supportive community behind them.',
-    caseStudies: [
-      {
-        title: 'Connecting the Indian Desiverse',
-        subtitle: 'A secure, all-in-one ecosystem for Indians living abroad',
-        summary: 'Desiverse bridges the gap for the Desi community by providing a centralized, verified platform for carpooling, housing, and social networking, ensuring every interaction is backed by trust.',
-        challenge: 'Moving abroad involves complex hurdles—finding safe transport, reliable roommates, and a sense of belonging. Scattering these needs across unverified social groups often leads to security concerns and fragmented experiences.',
-        approach: 'We built a mobile-first experience centered on safety and community utility. Every feature, from "Desi Circles" to "Verified Rides," was designed to foster meaningful connections while maintaining high security standards through government-issued ID verification.',
-        highlights: [
-          'Mandatory Face ID and ID verification for all users',
-          'Integrated carpooling system for safe, affordable travel',
-          'Specialized housing portal for finding community roommates',
-          'Dynamic event discovery for cultural and professional meetups',
-          'Interest-based networking through Desi Circles',
-          'Mobile-first design for on-the-go community access',
-        ],
-      },
-    ],
-  },
-  {
-    slug: 'chicago-entertainment-services',
-    title: 'Chicago Entertainment Services',
-    category: 'Event Production & Entertainment',
-    summary: 'A premier event production company delivering luxury interactive entertainment, high-energy DJ services, and seamless event planning for unforgettable experiences.',
-    results: ['High-energy engagement', 'Stress-free coordination', 'Innovative event technology'],
-    liveSource: 'https://chicagoentertainmentservices.com/',
-    intro: 'Chicago Entertainment Services (CES) is a full-service event production and entertainment agency that transforms special moments into extraordinary experiences through creative technology and professional coordination.',
-    challenge: 'Event hosts often struggle to balance multiple vendors, technical logistics, and guest engagement. Fragmented services for music, photography, and planning can lead to inconsistent quality and operational stress during high-stakes events.',
-    solution: 'We delivered a unified digital presence and operational framework that highlights CES as a single-source solution for luxury photo booths, professional DJ services, and end-to-end event production.',
-    features: [
-      'Interactive 360 Video Booths',
-      'Mirror Photo Booth Experiences',
-      'Professional DJ & Sound Production',
-      'Full-scale Event Coordination',
-      'Creative Photography & Videography',
-      'Integrated Booking & Planning Tools',
-    ],
-    outcomes: [
-      'Streamlined vendor management for clients',
-      'Increased interactive guest engagement',
-      'Consistent, high-quality event branding',
-    ],
-    detailIntro: 'For Chicago Entertainment Services, the focus is on the intersection of technology and hospitality. By integrating modern interactive elements like 360-degree video with traditional high-end event planning, the platform positions CES as an industry leader in the Chicago event market.',
-    caseStudies: [
-      {
-        title: 'Elevating Event Experiences',
-        subtitle: 'A comprehensive production ecosystem for high-end celebrations',
-        summary: 'CES provides a centralized, tech-driven entertainment solution that simplifies the complex logistics of weddings, corporate events, and private galas while maximizing guest interaction.',
-        challenge: 'Special events require high reliability and "wow" factors. Traditional entertainment often lacks the interactive, shareable digital elements that modern guests expect, while planners struggle to find vendors who can handle both the technical and creative aspects of an event.',
-        approach: 'We built a digital identity and service model centered on "Unforgettable Moments." The experience emphasizes the tactile, interactive nature of their products (like Mirror Booths) alongside the professional reliability of their DJ and planning services, creating a high-trust narrative for premium clients.',
-        highlights: [
-          'Cinematic 360 video booth integration for viral social sharing',
-          'Curated DJ experiences with professional sound and lighting design',
-          'End-to-end event management from concept to teardown',
-          'Interactive mirror booths with customizable digital overlays',
-          'Professional capture of key moments via high-end media teams',
-          'Mobile-responsive platform for client booking and inquiries',
+          'Interactive 360 Video and Mirror Photo Booths',
+          'Professional DJ & Sound Production integration',
+          'Full-scale Event Coordination & Planning tools',
+          'Mobile-responsive platform for client booking',
+          'Cinematic capture of key moments via high-end media teams',
         ],
       },
     ],
@@ -528,7 +626,8 @@ export const projects = [
 ];
 
 
-export const getProjectBySlug = (slug) => projects.find((project) => project.slug === slug);
+export const getProjectBySlug = (slug) => industry.find((project) => project.slug === slug);
+
 
 export const testimonials = [
   {

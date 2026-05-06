@@ -49,7 +49,10 @@ const Navbar = () => {
 
           <div className="hidden items-center gap-1 xl:flex">
             {navigation.map((item) => {
-              const active = location.pathname === item.href;
+              const active =
+                item.href === '/'
+                  ? location.pathname === '/'
+                  : location.pathname === item.href || location.pathname.startsWith(`${item.href}/`);
               return (
                 <Link
                   key={item.href}
@@ -70,7 +73,7 @@ const Navbar = () => {
               onClick={scrollToContact}
               className="rounded-full bg-brand-950 px-5 py-2.5 text-sm font-semibold text-white shadow-soft hover:-translate-y-0.5 hover:bg-brand-900"
             >
-              Start a Project
+              Contact Us
             </button>
           </div>
 
@@ -107,7 +110,7 @@ const Navbar = () => {
                   onClick={scrollToContact}
                   className="mt-2 rounded-2xl bg-brand-950 px-4 py-3 text-sm font-semibold text-white"
                 >
-                  Start a Project
+                  Contact Us
                 </button>
               </div>
             </motion.div>

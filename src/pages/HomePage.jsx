@@ -3,7 +3,7 @@ import PageMeta from '../components/shared/PageMeta';
 import PageShell from '../components/shared/PageShell';
 import ContactSection from '../components/sections/ContactSection';
 import HeroSection from '../components/sections/HeroSection';
-import PortfolioPreview from '../components/sections/PortfolioPreview';
+import IndustryPreview from '../components/sections/IndustryPreview';
 import ProcessSection from '../components/sections/ProcessSection';
 import ServicesGrid from '../components/sections/ServicesGrid';
 import TestimonialsSection from '../components/sections/TestimonialsSection';
@@ -18,7 +18,7 @@ const HomePage = () => {
       <HeroSection />
       <ServicesGrid compact />
       <ProcessSection />
-      <PortfolioPreview compact />
+      <IndustryPreview compact />
       <TestimonialsSection />
       <CTASection />
       <ContactSection />

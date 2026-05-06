@@ -28,10 +28,10 @@ const CTASection = () => {
                 <ArrowRight size={18} />
               </Link>
               <Link
-                to="/portfolio"
+                to="/industry"
                 className="inline-flex items-center gap-2 rounded-full border border-white/25 px-6 py-3 font-semibold text-white hover:bg-white/10"
               >
-                See Recent Work
+                See Recent Industry
               </Link>
             </div>
           </div>

@@ -89,10 +89,10 @@ const ServicesPage = () => {
                   <ArrowRight size={18} />
                 </Link>
                 <Link
-                  to="/portfolio"
+                  to="/industry"
                   className="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-6 py-3 font-semibold text-brand-950 hover:-translate-y-0.5"
                 >
-                  View Portfolio
+                  View Industry
                 </Link>
               </div>
             </div>
