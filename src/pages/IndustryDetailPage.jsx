@@ -62,7 +62,7 @@ const IndustryDetailPage = () => {
               <p className="mt-4 text-sm leading-7 text-slate-600">
                 This internal detail page is based on the corresponding industry solution area from your live website and is designed to keep visitors engaged inside the redesigned experience.
               </p>
-              <a
+              {/* <a
                 href={project.liveSource}
                 target="_blank"
                 rel="noreferrer"
@@ -70,7 +70,7 @@ const IndustryDetailPage = () => {
               >
                 View Original Industry Page
                 <ArrowUpRight size={16} />
-              </a>
+              </a> */}
             </div>
           </Reveal>
         </div>
