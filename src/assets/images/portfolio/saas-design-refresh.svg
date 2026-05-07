@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f7f6ff"/>
+      <stop offset="0.6" stop-color="#e4e0ff"/>
+      <stop offset="1" stop-color="#cfc6ff"/>
+    </linearGradient>
+    <linearGradient id="p" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#4253e2"/>
+      <stop offset="1" stop-color="#3e2ec1"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#g)"/>
+  <g transform="translate(120 130)">
+    <rect width="1360" height="740" rx="70" fill="#ffffff" fill-opacity="0.75"/>
+    <rect x="56" y="64" width="1248" height="120" rx="60" fill="url(#p)" fill-opacity="0.95"/>
+    <rect x="56" y="224" width="780" height="446" rx="56" fill="#0f172a" fill-opacity="0.05"/>
+    <rect x="876" y="224" width="428" height="446" rx="56" fill="#0f172a" fill-opacity="0.04"/>
+  </g>
+  <g fill="#0f172a">
+    <text x="180" y="290" font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial" font-size="32" letter-spacing="4" fill-opacity="0.72">PORTFOLIO</text>
+    <text x="180" y="380" font-family="Poppins, system-ui, -apple-system, Segoe UI, Roboto, Arial" font-size="88" font-weight="700">SaaS Design Refresh</text>
+    <text x="180" y="455" font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial" font-size="32" fill-opacity="0.68">UI modernization • Design system • Motion</text>
+  </g>
+</svg>

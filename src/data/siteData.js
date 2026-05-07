@@ -10,7 +10,19 @@ import {
   ShoppingCart,
   Smartphone,
   Workflow,
+  Stethoscope,
+  Dumbbell,
+  Users,
+  Home,
+  Truck,
+  Settings,
+  Briefcase,
+  Sun,
+  Trophy,
+  Heart,
+  Music,
 } from 'lucide-react';
+import { portfolioImages } from '../constant/image';
 
 export const company = {
   name: 'Shivaditya Infotech',
@@ -26,10 +38,342 @@ export const navigation = [
   { label: 'Home', href: '/' },
   { label: 'About', href: '/about' },
   { label: 'Services', href: '/services' },
+  { label: 'Industry', href: '/industry' },
   { label: 'Portfolio', href: '/portfolio' },
   { label: 'Blog', href: '/blog' },
   { label: 'Careers', href: '/careers' },
-  { label: 'Contact', href: '/contact' },
+  // { label: 'Contact', href: '/contact' },
+];
+
+export const projects = [
+  {
+    slug: 'play-amigos',
+    title: 'Play Amigos',
+    category: 'Sports Community App',
+    summary: 'A mobile-first platform to join games, create matches, book venues, and chat with teammates — all in one guided flow.',
+    coverImage: portfolioImages.playAmigos,
+    services: ['UI/UX', 'Mobile App Development', 'Backend APIs'],
+    techStack: ['React Native', 'Node.js', 'PostgreSQL', 'Firebase Notifications'],
+    highlights: [
+      'Location + skill-based discovery',
+      'Create-a-game flow with approvals',
+      'Venue booking embedded into setup',
+      'In-app chat and match coordination',
+    ],
+    detail: {
+      context:
+        'Sports coordination usually happens across scattered groups and messages. The goal was to reduce planning friction while keeping the experience lightweight and social.',
+      challenge:
+        'Users needed to quickly understand who is playing, where to meet, and what skill level is expected — without long forms or confusing steps.',
+      solution:
+        'We designed a guided match creation and discovery experience with early intent signals (location + skill), clear join/create actions, and chat at the moment commitment is confirmed.',
+      outcomes: [
+        'Faster time-to-join for new users',
+        'Fewer drop-offs during match setup',
+        'Clearer expectations via skill signals',
+      ],
+    },
+  },
+  {
+    slug: 'dirty100',
+    title: 'Dirty100',
+    category: 'Motocross Ranking Platform',
+    summary: 'A high-performance web platform with a custom point calculation engine and real-time leaderboards.',
+    coverImage: portfolioImages.dirty100,
+    services: ['Web App Development', 'Product Engineering', 'UI/UX'],
+    techStack: ['React', 'Node.js', 'PostgreSQL', 'Redis'],
+    highlights: [
+      'Custom weighted scoring algorithm',
+      'Searchable rider and event database',
+      'Class filters + historical analytics',
+      'Mobile-first dark UI patterns',
+    ],
+    detail: {
+      context:
+        'The client needed a unified ranking system that felt credible, fast, and exciting for a high-energy sports audience.',
+      challenge:
+        'Complex scoring rules and large datasets required both correctness and speed, especially on mobile.',
+      solution:
+        'We built a modular calculation engine, optimized queries and caching, and paired it with a bold interface for rapid browsing and filtering.',
+      outcomes: [
+        'Reliable leaderboard updates',
+        'Faster page loads on mobile',
+        'Clear, trustworthy rankings display',
+      ],
+    },
+  },
+  {
+    slug: 'migraine-tracker',
+    title: 'Migraine Tracker',
+    category: 'Healthcare App',
+    summary: 'A patient-friendly tracking experience for symptoms, triggers, patterns, and shareable reports.',
+    coverImage: portfolioImages.migraineTracker,
+    services: ['Mobile App Development', 'UI/UX', 'Data Visualization'],
+    techStack: ['Flutter', 'Firebase', 'Cloud Functions'],
+    highlights: [
+      'Daily symptom + trigger tracking',
+      'Pattern insights and summaries',
+      'Exportable reports for clinicians',
+      'Privacy-first data approach',
+    ],
+    detail: {
+      context:
+        'Users needed a calmer, more supportive alternative to basic headache diaries with better insight and reporting.',
+      challenge:
+        'Health logging must be quick enough for daily use while still capturing meaningful detail.',
+      solution:
+        'We created a low-friction logging flow, gentle data visualizations, and a report format that’s easy to share during appointments.',
+      outcomes: ['Higher tracking consistency', 'Better trigger awareness', 'More useful clinical conversations'],
+    },
+  },
+  {
+    slug: 'logistics-ops-dashboard',
+    title: 'Logistics Ops Dashboard',
+    category: 'Operations Dashboard',
+    summary: 'A role-based dashboard for tracking orders, dispatch status, and exception handling in one place.',
+    coverImage: portfolioImages.logisticsOpsDashboard,
+    services: ['Custom Software', 'Web App Development', 'UI/UX'],
+    techStack: ['React', 'Node.js', 'PostgreSQL', 'Maps API'],
+    highlights: [
+      'Role-based access and views',
+      'Order + dispatch tracking timelines',
+      'Exception queues and quick actions',
+      'Map-assisted visibility',
+    ],
+    detail: {
+      context:
+        'Operations teams needed a single source of truth for shipments, driver status, and customer updates.',
+      challenge:
+        'Information was fragmented across spreadsheets and messages, slowing responses to exceptions.',
+      solution:
+        'We designed a clean dashboard with timelines, queue-based workflows, and map context so teams can resolve issues faster.',
+      outcomes: ['Faster exception resolution', 'Higher operational visibility', 'Reduced manual coordination'],
+    },
+  },
+  {
+    slug: 'desiverse',
+    title: 'Desiverse',
+    category: 'Community Ecosystem',
+    summary: 'A unified platform connecting the Indian diaspora with essential services and community support through a verified and secure network.',
+    coverImage: portfolioImages.desiverse,
+    services: ['UI/UX Design', 'Web App Development', 'Community Platform'],
+    techStack: ['React', 'Node.js', 'MongoDB', 'Express'],
+    highlights: [
+      'Verified Face ID & ID authentication',
+      'Integrated carpooling & housing systems',
+      'Interest-based networking (Desi Circles)',
+      'Real-time event discovery & classifieds',
+    ],
+    detail: {
+      context:
+        'The Indian diaspora abroad often faces challenges finding safe transport, reliable roommates, and a sense of belonging in a new country.',
+      challenge:
+        'Information is often fragmented across unverified social groups, leading to security concerns and difficulty in building trust.',
+      solution:
+        'We built a secure, all-in-one ecosystem centered on safety, using mandatory verification and specialized portals for essential community needs.',
+      outcomes: [
+        'Higher trust through mandatory verification',
+        'Simplified access to shared community resources',
+        'Stronger sense of belonging for Indians abroad',
+      ],
+    },
+  },
+  {
+    slug: 'lead-edge-logistics',
+    title: 'Lead Edge Logistics',
+    category: 'Global Freight Forwarding',
+    summary: 'A comprehensive global logistics platform specialized in specialty chemicals, air & ocean freight, and end-to-end supply chain transparency.',
+    coverImage: portfolioImages.leadEdgeLogistics,
+    services: ['Web App Development', 'Supply Chain Management', 'UI/UX Strategy'],
+    techStack: ['React', 'Node.js', 'PostgreSQL', 'Maps API'],
+    highlights: [
+      'Specialized chemicals logistics handling',
+      'Real-time shipment tracking & transparency',
+      'Global network integration (24/7 support)',
+      'Customs brokerage & documentation automation',
+    ],
+    detail: {
+      context:
+        'Lead Edge Logistics needed a digital foundation to manage global freight operations, specifically for the complex requirements of specialty chemicals.',
+      challenge:
+        'Fragmented communication and lack of real-time visibility in international shipping often lead to delays and safety concerns, especially with hazardous materials.',
+      solution:
+        'We developed a unified platform that integrates air, ocean, and land transport tracking with specialized compliance modules for chemical logistics and real-time provider communication.',
+      outcomes: [
+        'Enhanced operational transparency',
+        'Improved safety compliance for chemical freight',
+        'Streamlined global partner coordination',
+      ],
+    },
+  },
+  {
+    slug: 'lodenrand-marines',
+    title: 'Lodenrand Marines',
+    category: 'Maritime Logistics & Tracking',
+    summary: 'A specialized NVOCC and maritime logistics platform providing real-time global tracking for air and ocean freight.',
+    coverImage: portfolioImages.lodenrandMarines,
+    services: ['Web App Development', 'Maritime Logistics', 'Real-time Tracking'],
+    techStack: ['React', 'Node.js', 'PostgreSQL', 'Shipping APIs'],
+    highlights: [
+      'Unified Air & Ocean freight tracking',
+      'Multi-identifier tracking (BL, Container, Bill)',
+      'NVOCC operations management',
+      'Singapore-centered global logistics hub',
+    ],
+    detail: {
+      context:
+        'Lodenrand Marines needed a dedicated digital portal to unify their maritime logistics operations and provide customers with transparent shipment visibility.',
+      challenge:
+        'Tracking international shipments across different carriers and modes (Air/Ocean) often results in fragmented data and customer confusion.',
+      solution:
+        'We built a high-performance tracking portal that centralizes data from various shipping sources, allowing users to track via multiple identifiers through a single, intuitive interface.',
+      outcomes: [
+        'Consolidated tracking experience',
+        'Increased customer self-service efficiency',
+        'Enhanced transparency for global maritime trade',
+      ],
+    },
+  },
+  {
+    slug: 'mfa-alliance',
+    title: 'Multinational Forwarders Alliance',
+    category: 'Global Logistics Network',
+    summary: 'A digital ecosystem for a global alliance of 344+ freight forwarding offices, featuring a dedicated mobile app for member networking and coordination.',
+    coverImage: portfolioImages.mfaAlliance,
+    services: ['Mobile App Development', 'Network Management Platform', 'UI/UX Strategy'],
+    techStack: ['React Native', 'Node.js', 'MongoDB', 'Cloud Infrastructure'],
+    highlights: [
+      'Global network of 344+ member offices',
+      'Dedicated MFA networking app',
+      'Presence in 75+ countries',
+      'Digital marketing & collaboration tools',
+    ],
+    detail: {
+      context:
+        'The Multinational Forwarders Alliance needed to modernize their global networking capabilities, moving from manual coordination to a digital-first ecosystem for their members.',
+      challenge:
+        'Managing a network of independent freight forwarders across 150+ cities requires high-trust communication and real-time collaboration tools that work across time zones.',
+      solution:
+        'We developed a unified digital platform and mobile application that allows members to discover partners, communicate securely, and manage logistics collaborations through a centralized interface.',
+      outcomes: [
+        'Streamlined member-to-member communication',
+        'Increased business generation within the alliance',
+        'Modernized digital presence for a 20+ year old network',
+      ],
+    },
+  },
+  {
+    slug: 'chicago-entertainment-services',
+    title: 'Chicago Entertainment Services',
+    category: 'Interactive Entertainment Platform',
+    summary: 'A luxury event entertainment platform integrating interactive photo booths, 360 video technology, and professional event coordination.',
+    coverImage: portfolioImages.chicagoEntertainment,
+    services: ['UI/UX Design', 'Event Tech Integration', 'Web App Development'],
+    techStack: ['React', 'Node.js', 'Interactive Booth APIs', 'Real-time Sharing'],
+    highlights: [
+      '360 Cinematic Video Booth integration',
+      'Mirror Photo Booth interactive interfaces',
+      'Full-scale Event Planning & DJ coordination',
+      'Corporate & Luxury wedding specializations',
+    ],
+    detail: {
+      context:
+        'Chicago Entertainment Services needed a high-trust digital identity that balanced luxury hospitality with modern interactive technology.',
+      challenge:
+        'Event hosts often struggle with vendor fragmentation. The client needed a single-source solution for premium entertainment and planning.',
+      solution:
+        'We built a high-end digital presence centered on "Unforgettable Moments," featuring an integrated booking system and specialized modules for interactive event tech.',
+      outcomes: [
+        'Elevated brand authority in the luxury event space',
+        'Streamlined inquiry and planning workflows',
+        'Enhanced guest engagement through tech-driven experiences',
+      ],
+    },
+  },
+  {
+    slug: 'dirty100-gate-checkin',
+    title: 'Dirty100 Gate Check-in',
+    category: 'Event Access Control',
+    summary: 'A rugged, high-performance mobile check-in system for Motocross events, featuring QR scanning, real-time sync, and offline reliability.',
+    coverImage: portfolioImages.dirty100GateCheckin,
+    services: ['Mobile App Development', 'Event Operations Tech', 'UI/UX Strategy'],
+    techStack: ['React Native', 'Node.js', 'PostgreSQL', 'QR Code Engine'],
+    highlights: [
+      'Rapid QR-based participant verification',
+      'Offline-first data sync for remote tracks',
+      'Real-time gate operation analytics',
+      'Automated digital check-in receipts',
+    ],
+    detail: {
+      context:
+        'The Dirty100 Motocross events needed a reliable way to manage rider check-ins in high-volume, often remote environments where paper systems were failing.',
+      challenge:
+        'Race day coordination involves handling hundreds of riders in dusty, outdoor locations with inconsistent internet connectivity.',
+      solution:
+        'We engineered a ruggedized mobile-first check-in application with offline data capture, instant QR verification, and a real-time dashboard for event organizers.',
+      outcomes: [
+        'Significant reduction in rider check-in wait times',
+        'Eliminated paper-based data entry errors',
+        'Enhanced event safety and operational transparency',
+      ],
+    },
+  },
+  {
+    slug: 'fleetvelos',
+    title: 'Fleetvelos',
+    category: 'Fleet Management Platform',
+    summary: 'A comprehensive mobile-first ecosystem for transport owners to digitize trip logs, track real-time profits, and manage driver operations.',
+    coverImage: portfolioImages.fleetvelos,
+    services: ['Mobile App Development', 'Financial Dashboard', 'UI/UX Strategy'],
+    techStack: ['React Native', 'Node.js', 'PostgreSQL', 'Cloud Reporting'],
+    highlights: [
+      'Real-time trip & driver tracking',
+      'Automated Trip Hisab & Profit/Loss analytics',
+      'Professional PDF billing & report generation',
+      'Unified digital ledger for maintenance & salaries',
+    ],
+    detail: {
+      context:
+        'Fleet owners often rely on fragmented paper registers and manual calculations, leading to financial leakage and operational blind spots.',
+      challenge:
+        'Transport businesses need a reliable way to track every expense, trip, and maintenance event while providing clear financial reporting to stakeholders.',
+      solution:
+        'We developed Fleetvelos as a high-performance mobile platform that digitizes the entire logistics workflow, from driver assignments to final billing and profit analysis.',
+      outcomes: [
+        'Eliminated manual calculation errors',
+        'Provided instant financial clarity on trip profitability',
+        'Modernized fleet operations for better scalability',
+      ],
+    },
+  },
+  {
+    slug: 'vizag-florist',
+    title: 'Vizag Florist',
+    category: 'E-commerce & Gifting Platform',
+    summary: 'A global e-commerce ecosystem for flower and gift delivery, featuring midnight delivery options, real-time tracking, and international shipping across 100+ countries.',
+    coverImage: portfolioImages.vizagFlorist,
+    services: ['E-commerce Development', 'UI/UX Strategy', 'Logistics Integration'],
+    techStack: ['React', 'Node.js', 'PostgreSQL', 'Secure Payment Gateways'],
+    highlights: [
+      'Global delivery network (200+ cities in India, 100+ countries)',
+      'Advanced delivery modes (Midnight, Same-day, Early Morning)',
+      'Integrated real-time order tracking system',
+      'Custom B2B Vendor Inquiry & Order modules',
+    ],
+    detail: {
+      context:
+        'Vizag Florist needed to scale their local floristry business into a global gifting platform that could handle complex delivery schedules and international logistics.',
+      challenge:
+        'Managing time-sensitive deliveries (like midnight surprises) across different time zones and regions requires extreme operational precision and a robust technical foundation.',
+      solution:
+        'We built a comprehensive e-commerce platform with a sophisticated scheduling engine, secure multi-currency payments, and a centralized tracking portal for global shipments.',
+      outcomes: [
+        'Successful expansion into international markets',
+        'Higher customer satisfaction through precision delivery timing',
+        'Scalable infrastructure for high-volume holiday seasons',
+      ],
+    },
+  },
 ];
 
 export const stats = [
@@ -90,13 +434,14 @@ export const services = [
   },
 ];
 
-export const projects = [
+export const industry = [
   {
     slug: 'healthcare-solutions',
     title: 'Healthcare Solutions',
     category: 'Healthcare',
     summary: 'Patient-focused healthcare apps and digital care platforms built to improve engagement, symptom tracking, education, and operational clarity.',
     results: ['Patient empowerment', 'Data-driven care insights', 'Secure healthcare product design'],
+    icon: Stethoscope,
     liveSource: 'https://shivadityainfotech.com/healthcare/',
     intro:
       'We build healthcare products that make complex health journeys easier to understand, track, and manage for both patients and care-driven organizations.',
@@ -149,6 +494,7 @@ export const projects = [
     category: 'Fitness & Sports',
     summary: 'Personalized fitness and sports products built around training, motivation, community engagement, and measurable performance progress.',
     results: ['Personalized training', 'Motivation-driven engagement', 'Performance insights'],
+    icon: Dumbbell,
     liveSource: 'https://shivadityainfotech.com/fitness-and-sports/',
     intro:
       'We build fitness and sports products that keep users motivated with personalized training, progress visibility, and interactive experiences that support long-term engagement.',
@@ -177,6 +523,52 @@ export const projects = [
           'Flexible premium subscriptions with secure multi-gateway payment support',
         ],
       },
+        {
+        title: 'Play Amigos: Your Ultimate Sports Connection App',
+        subtitle: 'Helping players join games, book venues, and build teams in minutes',
+        summary:
+          'Play Amigos connects local players with nearby games and available venues. Users can join existing matches, create their own game, post the skill levels they need, and coordinate details through chat—making it easier to play more often with less planning overhead.',
+        challenge:
+          'Most sports coordination happens in scattered groups. Players do not know who is available, what skill level is expected, or where to play. Venue booking is usually disconnected from team formation, which creates drop-offs and last-minute cancellations.',
+        approach:
+          'We built a mobile-first flow that keeps decisions simple: capture location and skill early, surface nearby games, provide clear “join” and “create” actions, and unify venue booking and team fill inside one guided experience. Chat is integrated at the moment it matters—after intent is confirmed.',
+        highlights: [
+          'Quick onboarding with location + skill matching signals',
+          'Nearby sports discovery with joinable listings',
+          'Create-a-game flow with player requirements and approvals',
+          'Venue booking embedded into the match setup process',
+          'In-app chat for coordination and community building',
+          'Supports casual and competitive play preferences',
+        ],
+      },
+      {
+        title: 'Dirty100: Motocross Performance Tracking',
+        subtitle: 'The premier ranking system and community platform for the motocross industry',
+        summary: 'Dirty100 is a high-performance web platform with a custom point calculation engine that transforms raw event data into a prestigious meritocratic leaderboard for amateur and professional riders.',
+        challenge: 'The industry lacked a unified, weighted ranking system. The client needed a platform that handled complex data aggregation while matching the "high-octane" spirit of the sport.',
+        approach: 'We engineered a custom scoring algorithm to weight events by prestige and delivered a dark-mode interface with real-time rankings and historical performance analytics.',
+        highlights: [
+          'Custom Point Calculation Engine',
+          'Dynamic Leaderboards with class filtering',
+          'Weighted Event Management system',
+          'Historical performance data comparison',
+          'Mobile-first responsive interface',
+          'Searchable rider and event database',
+        ],
+      },
+      {
+        title: 'Dirty100: Rugged Event Access Control',
+        subtitle: 'Digitizing high-octane event logistics for the Motocross industry',
+        summary: 'The Dirty100 Gate Check-in system is a specialized mobile solution that ensures seamless entry management for large-scale sports events, even in the most demanding environments.',
+        challenge: 'Managing access for high-speed sports events requires both extreme speed and data accuracy, often in locations with limited infrastructure.',
+        approach: 'We focused on an offline-first architecture and a high-contrast, mobile-optimized UI that field staff could operate reliably during fast-paced race days.',
+        highlights: [
+          'Instant Pass & QR verification',
+          'Real-time data synchronization across all entry points',
+          'Comprehensive participant logs and entry history',
+          'Optimized for remote, low-connectivity environments',
+        ],
+      },
     ],
   },
   {
@@ -185,6 +577,7 @@ export const projects = [
     category: 'Social Media',
     summary: 'Custom social media platforms built for community engagement, real-time interaction, content sharing, and scalable user growth.',
     results: ['Real-time communication', 'Community engagement', 'Scalable social architecture'],
+    icon: Users,
     liveSource: 'https://shivadityainfotech.com/social-media/',
     intro:
       'We design and develop social media applications that help people connect, engage, share content, and build communities through seamless digital experiences.',
@@ -213,6 +606,21 @@ export const projects = [
           'Cross-platform product delivery with monetization support through subscriptions, ads, or in-app purchases',
         ],
       },
+      {
+        title: 'Desiverse: Community Ecosystem',
+        subtitle: 'A secure, all-in-one ecosystem for the Indian diaspora abroad',
+        summary: 'Desiverse is a community-driven platform that connects users through verified services like carpooling, shared housing, and interest-based circles, ensuring every interaction is backed by trust.',
+        challenge: 'Moving abroad involves complex hurdles—finding safe transport, reliable roommates, and a sense of belonging. Scattering these needs across unverified groups leads to security concerns.',
+        approach: 'We built a mobile-first experience centered on safety, using mandatory ID verification and specialized portals for rides, housing, and social networking.',
+        highlights: [
+          'Mandatory Face ID and ID verification for all users',
+          'Integrated carpooling system for safe, affordable travel',
+          'Specialized housing portal for finding community roommates',
+          'Dynamic event discovery for cultural and professional meetups',
+          'Interest-based networking through Desi Circles',
+          'Mobile-first design for on-the-go community access',
+        ],
+      },
     ],
   },
   {
@@ -221,6 +629,7 @@ export const projects = [
     category: 'Real Estate',
     summary: 'AI-enhanced real estate products built for property discovery, smarter valuation, lead generation, and operational visibility.',
     results: ['AI-assisted valuation', 'Market transparency', 'Smarter property decisions'],
+    icon: Home,
     liveSource: 'https://shivadityainfotech.com/real-estate/',
     intro:
       'We create real estate products that help users evaluate properties faster, reduce uncertainty, and make better buying or selling decisions with digital confidence.',
@@ -257,6 +666,7 @@ export const projects = [
     category: 'Logistics',
     summary: 'Global logistics platforms built to simplify shipment creation, provider coordination, live tracking, and operational transparency.',
     results: ['Global shipment visibility', 'Provider connectivity', 'Operational transparency'],
+    icon: Truck,
     liveSource: 'https://shivadityainfotech.com/logistic/',
     intro:
       'We build logistics products that help businesses simplify shipping, connect with providers faster, and track operations with more confidence from origin to delivery.',
@@ -285,6 +695,70 @@ export const projects = [
           'Live tracking, manifests, invoices, and communication history in one place',
         ],
       },
+      {
+        title: 'Lead Edge Logistics: Speciality Chemicals & Global Freight',
+        subtitle: 'Simplifying complex supply chains with precision and transparency',
+        summary:
+          'Lead Edge Logistics provides world-class freight forwarding with a niche focus on specialty chemicals, ensuring safe and efficient global trade through a robust digital network.',
+        challenge:
+          'The specialty chemicals industry requires extreme precision, strict compliance, and constant monitoring, which traditional manual logistics systems struggle to provide at scale.',
+        approach:
+          'We built a logistics ecosystem centered on reliability and safety, incorporating real-time tracking, automated documentation for customs, and dedicated modules for hazardous material handling.',
+        highlights: [
+          'End-to-end Air, Ocean, and Land transport solutions',
+          'Specialized expertise in hazardous & non-hazardous chemical logistics',
+          'Automated Customs Brokerage and regulatory compliance',
+          '24/7 global support network with real-time status updates',
+        ],
+      },
+      {
+        title: 'Lodenrand Marines: Unified Maritime Tracking',
+        subtitle: 'Connecting global trade through transparent maritime logistics',
+        summary:
+          'Lodenrand Marines leverages a digital-first approach to NVOCC services, offering a unified platform for tracking global shipments across air and sea.',
+        challenge:
+          'Maritime logistics involves complex coordination between agents, vessels, and carriers, often lacking a single source of truth for shipment status.',
+        approach:
+          'We engineered a robust track-and-trace system integrated with global maritime data, focusing on speed, accuracy, and ease of use for international clients.',
+        highlights: [
+          'End-to-end NVOCC and liner shipping solutions',
+          'Integrated Air and Ocean freight tracking portal',
+          'Real-time visibility into Singapore-based global shipping hubs',
+          'Support for multiple tracking modes (Container, BL, Bill)',
+        ],
+      },
+      {
+        title: 'MFA: Scaling Global Logistics Networks',
+        subtitle: 'Empowering independent forwarders through digital connectivity',
+        summary:
+          'MFA is a premier global logistics alliance that uses digital innovation to connect freight forwarders across 75+ countries, enabling them to compete on a global scale.',
+        challenge:
+          'Independent forwarders often lack the global reach of multinational giants. They need a reliable, high-tech network to find trusted partners and manage international shipments.',
+        approach:
+          'We built a robust networking and management platform centered on the "Moving Forward" philosophy, integrating a mobile app that facilitates real-time business generation and communication.',
+        highlights: [
+          'Global reach across 150+ cities and 75+ countries',
+          'Centralized Member Directory and App-based networking',
+          'Innovative digital tools for logistics business development',
+          'Trusted network ecosystem for high-level logistics partnerships',
+        ],
+      },
+      {
+        title: 'Fleetvelos: Digitizing Transport Operations',
+        subtitle: 'Transforming paper-based fleet management into a digital growth engine',
+        summary:
+          'Fleetvelos is a specialized logistics platform that empowers fleet owners with real-time visibility and deep financial insights into their day-to-day transport operations.',
+        challenge:
+          'The transport industry is traditionally paper-heavy, making it difficult for owners to manage diverse costs and track long-term profitability accurately.',
+        approach:
+          'We built a user-friendly mobile experience centered on financial precision, incorporating automated billing and visual profit charts to help owners make data-driven decisions.',
+        highlights: [
+          'Live Trip status and location monitoring',
+          'Instant Profit & Loss tracking per vehicle',
+          'Centralized Driver and Maintenance registry',
+          'One-click professional PDF report generation',
+        ],
+      },
     ],
   },
   {
@@ -293,6 +767,7 @@ export const projects = [
     category: 'ERP',
     summary: 'Custom ERP software built to unify operations, automate workflows, and give businesses real-time visibility across critical departments.',
     results: ['Unified operations', 'Workflow automation', 'Real-time business visibility'],
+    icon: Settings,
     liveSource: 'https://shivadityainfotech.com/erp/',
     intro:
       'We build ERP solutions that bring finance, HR, inventory, sales, and operational workflows into one connected system designed around how your business actually works.',
@@ -329,6 +804,7 @@ export const projects = [
     category: 'Business Applications',
     summary: 'Tailored business apps for internal teams, client operations, service workflows, and productivity-focused digital transformation.',
     results: ['Internal productivity', 'Custom workflows', 'Scalable business tools'],
+    icon: Briefcase,
     liveSource: 'https://shivadityainfotech.com/business-apps/',
     intro:
       'Custom business apps are often the fastest way to improve team productivity when off-the-shelf tools no longer fit the way a company actually operates.',
@@ -338,6 +814,21 @@ export const projects = [
       'We build focused business applications for internal teams, client processes, workflow visibility, and operational efficiency across multiple business functions.',
     features: ['Internal workflow dashboards', 'Client and operations portals', 'Role-specific toolsets', 'Reporting and performance visibility'],
     outcomes: ['Higher team productivity', 'Better process control', 'More scalable internal systems'],
+    caseStudies: [
+      {
+        title: 'Vizag Florist: Scaling Gifting Logistics',
+        subtitle: 'From local floristry to a global e-commerce powerhouse',
+        summary: 'Vizag Florist leverages a high-performance e-commerce platform to deliver emotions across borders, combining local expertise with global logistics scale.',
+        challenge: 'The gifting industry relies on emotional timing. A missed midnight delivery or a wilted bouquet can break a customer\'s trust, making reliability the most critical feature.',
+        approach: 'We designed the platform around "Delivery Confidence," incorporating real-time WhatsApp support, precision scheduling, and a transparent tracking system that keeps customers informed at every step.',
+        highlights: [
+          'Multi-category storefront (Flowers, Cakes, Hampers, Plants)',
+          'Global-to-Local logistics and vendor management',
+          'High-trust secure payment ecosystem (Visa, PayPal, RuPay)',
+          'Personalized user dashboards and occasion calendars',
+        ],
+      },
+    ],
   },
   {
     slug: 'lifestyle-apps',
@@ -345,6 +836,7 @@ export const projects = [
     category: 'Lifestyle',
     summary: 'Feature-rich apps for wellness, travel, productivity, personal habits, and everyday services with strong UI and retention-focused experiences.',
     results: ['Daily-use engagement', 'Modern UI/UX', 'Subscription-ready flows'],
+    icon: Sun,
     liveSource: 'https://shivadityainfotech.com/lifestyle/',
     intro:
       'Lifestyle products need to feel intuitive, visually engaging, and useful enough to become part of a user’s regular routine.',
@@ -354,10 +846,28 @@ export const projects = [
       'We create lifestyle apps focused on retention, smooth onboarding, personalized journeys, and modern interaction patterns across mobile and web.',
     features: ['Personalized dashboards and reminders', 'Subscription and payment flows', 'Progress tracking and analytics', 'Content, utility, or habit-based experiences'],
     outcomes: ['Higher day-to-day engagement', 'Better retention loops', 'More polished consumer-facing products'],
+    caseStudies: [
+      {
+        title: 'Chicago Entertainment Services',
+        subtitle: 'Elevating event experiences with tech-driven interactive entertainment',
+        summary: 'A unified digital presence and operational framework for a premier event production company, integrating 360 video booths, professional DJ services, and seamless planning tools.',
+        challenge: 'Event hosts struggled with vendor fragmentation and technical logistics. The client needed a single-source solution that balanced luxury hospitality with modern interactive technology.',
+        approach: 'We built a high-trust digital identity centered on "Unforgettable Moments," emphasizing interactive elements like Mirror Booths alongside reliable professional coordination.',
+        highlights: [
+          'Interactive 360 Video and Mirror Photo Booths',
+          'Professional DJ & Sound Production integration',
+          'Full-scale Event Coordination & Planning tools',
+          'Mobile-responsive platform for client booking',
+          'Cinematic capture of key moments via high-end media teams',
+        ],
+      },
+    ],
   },
 ];
 
-export const getProjectBySlug = (slug) => projects.find((project) => project.slug === slug);
+
+export const getProjectBySlug = (slug) => industry.find((project) => project.slug === slug);
+
 
 export const testimonials = [
   {

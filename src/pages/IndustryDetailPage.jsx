@@ -9,29 +9,29 @@ import { getProjectBySlug } from '../data/siteData';
 
 const iconMap = [Rocket, Layers3, Link2];
 
-const PortfolioDetailPage = () => {
+const IndustryDetailPage = () => {
   const { slug } = useParams();
   const project = getProjectBySlug(slug);
 
   if (!project) {
-    return <Navigate to="/portfolio" replace />;
+    return <Navigate to="/industry" replace />;
   }
 
   return (
     <PageShell className="pt-10">
       <PageMeta
-        title={`${project.title} | Portfolio | Shivaditya Infotech`}
+        title={`${project.title} | Industry | Shivaditya Infotech`}
         description={project.summary}
       />
 
       <section className="section-shell py-16">
         <Reveal>
           <Link
-            to="/portfolio"
+            to="/industry"
             className="inline-flex items-center gap-2 rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-brand-700 shadow-sm hover:-translate-y-0.5"
           >
             <ArrowLeft size={16} />
-            Back to Portfolio
+            Back to Industry
           </Link>
         </Reveal>
 
@@ -62,7 +62,7 @@ const PortfolioDetailPage = () => {
               <p className="mt-4 text-sm leading-7 text-slate-600">
                 This internal detail page is based on the corresponding industry solution area from your live website and is designed to keep visitors engaged inside the redesigned experience.
               </p>
-              <a
+              {/* <a
                 href={project.liveSource}
                 target="_blank"
                 rel="noreferrer"
@@ -70,7 +70,7 @@ const PortfolioDetailPage = () => {
               >
                 View Original Industry Page
                 <ArrowUpRight size={16} />
-              </a>
+              </a> */}
             </div>
           </Reveal>
         </div>
@@ -180,4 +180,4 @@ const PortfolioDetailPage = () => {
   );
 };
 
-export default PortfolioDetailPage;
+export default IndustryDetailPage;
