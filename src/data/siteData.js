@@ -127,30 +127,6 @@ export const projects = [
     },
   },
   {
-    slug: 'ecommerce-replatform',
-    title: 'Ecommerce Replatform',
-    category: 'Commerce Experience',
-    summary: 'A faster storefront experience with improved product discovery, checkout UX, and operational visibility.',
-    coverImage: portfolioImages.ecommerceReplatform,
-    services: ['Ecommerce Development', 'Web App Development', 'UI/UX'],
-    techStack: ['React', 'Headless CMS', 'Stripe', 'Node.js'],
-    highlights: [
-      'Faster category + search browsing',
-      'Checkout UX improvements',
-      'SEO-ready product templates',
-      'Analytics-friendly event tracking',
-    ],
-    detail: {
-      context:
-        'The focus was modernizing the buying journey while keeping merchandising control simple for the business team.',
-      challenge:
-        'Legacy templates and slow pages were hurting conversion and making updates too time-consuming.',
-      solution:
-        'We introduced a component-based storefront, improved search and merchandising patterns, and streamlined the checkout flow for fewer steps.',
-      outcomes: ['Improved conversion readiness', 'Faster content updates', 'Smoother mobile checkout'],
-    },
-  },
-  {
     slug: 'logistics-ops-dashboard',
     title: 'Logistics Ops Dashboard',
     category: 'Operations Dashboard',
@@ -172,30 +148,6 @@ export const projects = [
       solution:
         'We designed a clean dashboard with timelines, queue-based workflows, and map context so teams can resolve issues faster.',
       outcomes: ['Faster exception resolution', 'Higher operational visibility', 'Reduced manual coordination'],
-    },
-  },
-  {
-    slug: 'saas-design-refresh',
-    title: 'SaaS Design Refresh',
-    category: 'Product UI Modernization',
-    summary: 'A UI refresh that improves clarity, hierarchy, and consistency across core SaaS workflows.',
-    coverImage: portfolioImages.saasDesignRefresh,
-    services: ['UI/UX', 'Frontend Engineering'],
-    techStack: ['React', 'Tailwind CSS', 'Framer Motion'],
-    highlights: [
-      'Design tokens + component library',
-      'Improved IA and navigation',
-      'Accessibility-minded color/contrast',
-      'Motion that feels premium, not busy',
-    ],
-    detail: {
-      context:
-        'The product had strong functionality but the UI felt dated and inconsistent, hurting user confidence and onboarding.',
-      challenge:
-        'The redesign needed to be incremental, minimizing disruption while increasing perceived quality.',
-      solution:
-        'We introduced a small design system, refactored key screens, and added subtle motion and state clarity throughout the experience.',
-      outcomes: ['More consistent UI', 'Clearer user flows', 'Higher perceived product quality'],
     },
   },
   {
@@ -223,6 +175,202 @@ export const projects = [
         'Higher trust through mandatory verification',
         'Simplified access to shared community resources',
         'Stronger sense of belonging for Indians abroad',
+      ],
+    },
+  },
+  {
+    slug: 'lead-edge-logistics',
+    title: 'Lead Edge Logistics',
+    category: 'Global Freight Forwarding',
+    summary: 'A comprehensive global logistics platform specialized in specialty chemicals, air & ocean freight, and end-to-end supply chain transparency.',
+    coverImage: portfolioImages.leadEdgeLogistics,
+    services: ['Web App Development', 'Supply Chain Management', 'UI/UX Strategy'],
+    techStack: ['React', 'Node.js', 'PostgreSQL', 'Maps API'],
+    highlights: [
+      'Specialized chemicals logistics handling',
+      'Real-time shipment tracking & transparency',
+      'Global network integration (24/7 support)',
+      'Customs brokerage & documentation automation',
+    ],
+    detail: {
+      context:
+        'Lead Edge Logistics needed a digital foundation to manage global freight operations, specifically for the complex requirements of specialty chemicals.',
+      challenge:
+        'Fragmented communication and lack of real-time visibility in international shipping often lead to delays and safety concerns, especially with hazardous materials.',
+      solution:
+        'We developed a unified platform that integrates air, ocean, and land transport tracking with specialized compliance modules for chemical logistics and real-time provider communication.',
+      outcomes: [
+        'Enhanced operational transparency',
+        'Improved safety compliance for chemical freight',
+        'Streamlined global partner coordination',
+      ],
+    },
+  },
+  {
+    slug: 'lodenrand-marines',
+    title: 'Lodenrand Marines',
+    category: 'Maritime Logistics & Tracking',
+    summary: 'A specialized NVOCC and maritime logistics platform providing real-time global tracking for air and ocean freight.',
+    coverImage: portfolioImages.lodenrandMarines,
+    services: ['Web App Development', 'Maritime Logistics', 'Real-time Tracking'],
+    techStack: ['React', 'Node.js', 'PostgreSQL', 'Shipping APIs'],
+    highlights: [
+      'Unified Air & Ocean freight tracking',
+      'Multi-identifier tracking (BL, Container, Bill)',
+      'NVOCC operations management',
+      'Singapore-centered global logistics hub',
+    ],
+    detail: {
+      context:
+        'Lodenrand Marines needed a dedicated digital portal to unify their maritime logistics operations and provide customers with transparent shipment visibility.',
+      challenge:
+        'Tracking international shipments across different carriers and modes (Air/Ocean) often results in fragmented data and customer confusion.',
+      solution:
+        'We built a high-performance tracking portal that centralizes data from various shipping sources, allowing users to track via multiple identifiers through a single, intuitive interface.',
+      outcomes: [
+        'Consolidated tracking experience',
+        'Increased customer self-service efficiency',
+        'Enhanced transparency for global maritime trade',
+      ],
+    },
+  },
+  {
+    slug: 'mfa-alliance',
+    title: 'Multinational Forwarders Alliance',
+    category: 'Global Logistics Network',
+    summary: 'A digital ecosystem for a global alliance of 344+ freight forwarding offices, featuring a dedicated mobile app for member networking and coordination.',
+    coverImage: portfolioImages.mfaAlliance,
+    services: ['Mobile App Development', 'Network Management Platform', 'UI/UX Strategy'],
+    techStack: ['React Native', 'Node.js', 'MongoDB', 'Cloud Infrastructure'],
+    highlights: [
+      'Global network of 344+ member offices',
+      'Dedicated MFA networking app',
+      'Presence in 75+ countries',
+      'Digital marketing & collaboration tools',
+    ],
+    detail: {
+      context:
+        'The Multinational Forwarders Alliance needed to modernize their global networking capabilities, moving from manual coordination to a digital-first ecosystem for their members.',
+      challenge:
+        'Managing a network of independent freight forwarders across 150+ cities requires high-trust communication and real-time collaboration tools that work across time zones.',
+      solution:
+        'We developed a unified digital platform and mobile application that allows members to discover partners, communicate securely, and manage logistics collaborations through a centralized interface.',
+      outcomes: [
+        'Streamlined member-to-member communication',
+        'Increased business generation within the alliance',
+        'Modernized digital presence for a 20+ year old network',
+      ],
+    },
+  },
+  {
+    slug: 'chicago-entertainment-services',
+    title: 'Chicago Entertainment Services',
+    category: 'Interactive Entertainment Platform',
+    summary: 'A luxury event entertainment platform integrating interactive photo booths, 360 video technology, and professional event coordination.',
+    coverImage: portfolioImages.chicagoEntertainment,
+    services: ['UI/UX Design', 'Event Tech Integration', 'Web App Development'],
+    techStack: ['React', 'Node.js', 'Interactive Booth APIs', 'Real-time Sharing'],
+    highlights: [
+      '360 Cinematic Video Booth integration',
+      'Mirror Photo Booth interactive interfaces',
+      'Full-scale Event Planning & DJ coordination',
+      'Corporate & Luxury wedding specializations',
+    ],
+    detail: {
+      context:
+        'Chicago Entertainment Services needed a high-trust digital identity that balanced luxury hospitality with modern interactive technology.',
+      challenge:
+        'Event hosts often struggle with vendor fragmentation. The client needed a single-source solution for premium entertainment and planning.',
+      solution:
+        'We built a high-end digital presence centered on "Unforgettable Moments," featuring an integrated booking system and specialized modules for interactive event tech.',
+      outcomes: [
+        'Elevated brand authority in the luxury event space',
+        'Streamlined inquiry and planning workflows',
+        'Enhanced guest engagement through tech-driven experiences',
+      ],
+    },
+  },
+  {
+    slug: 'dirty100-gate-checkin',
+    title: 'Dirty100 Gate Check-in',
+    category: 'Event Access Control',
+    summary: 'A rugged, high-performance mobile check-in system for Motocross events, featuring QR scanning, real-time sync, and offline reliability.',
+    coverImage: portfolioImages.dirty100GateCheckin,
+    services: ['Mobile App Development', 'Event Operations Tech', 'UI/UX Strategy'],
+    techStack: ['React Native', 'Node.js', 'PostgreSQL', 'QR Code Engine'],
+    highlights: [
+      'Rapid QR-based participant verification',
+      'Offline-first data sync for remote tracks',
+      'Real-time gate operation analytics',
+      'Automated digital check-in receipts',
+    ],
+    detail: {
+      context:
+        'The Dirty100 Motocross events needed a reliable way to manage rider check-ins in high-volume, often remote environments where paper systems were failing.',
+      challenge:
+        'Race day coordination involves handling hundreds of riders in dusty, outdoor locations with inconsistent internet connectivity.',
+      solution:
+        'We engineered a ruggedized mobile-first check-in application with offline data capture, instant QR verification, and a real-time dashboard for event organizers.',
+      outcomes: [
+        'Significant reduction in rider check-in wait times',
+        'Eliminated paper-based data entry errors',
+        'Enhanced event safety and operational transparency',
+      ],
+    },
+  },
+  {
+    slug: 'fleetvelos',
+    title: 'Fleetvelos',
+    category: 'Fleet Management Platform',
+    summary: 'A comprehensive mobile-first ecosystem for transport owners to digitize trip logs, track real-time profits, and manage driver operations.',
+    coverImage: portfolioImages.fleetvelos,
+    services: ['Mobile App Development', 'Financial Dashboard', 'UI/UX Strategy'],
+    techStack: ['React Native', 'Node.js', 'PostgreSQL', 'Cloud Reporting'],
+    highlights: [
+      'Real-time trip & driver tracking',
+      'Automated Trip Hisab & Profit/Loss analytics',
+      'Professional PDF billing & report generation',
+      'Unified digital ledger for maintenance & salaries',
+    ],
+    detail: {
+      context:
+        'Fleet owners often rely on fragmented paper registers and manual calculations, leading to financial leakage and operational blind spots.',
+      challenge:
+        'Transport businesses need a reliable way to track every expense, trip, and maintenance event while providing clear financial reporting to stakeholders.',
+      solution:
+        'We developed Fleetvelos as a high-performance mobile platform that digitizes the entire logistics workflow, from driver assignments to final billing and profit analysis.',
+      outcomes: [
+        'Eliminated manual calculation errors',
+        'Provided instant financial clarity on trip profitability',
+        'Modernized fleet operations for better scalability',
+      ],
+    },
+  },
+  {
+    slug: 'vizag-florist',
+    title: 'Vizag Florist',
+    category: 'E-commerce & Gifting Platform',
+    summary: 'A global e-commerce ecosystem for flower and gift delivery, featuring midnight delivery options, real-time tracking, and international shipping across 100+ countries.',
+    coverImage: portfolioImages.vizagFlorist,
+    services: ['E-commerce Development', 'UI/UX Strategy', 'Logistics Integration'],
+    techStack: ['React', 'Node.js', 'PostgreSQL', 'Secure Payment Gateways'],
+    highlights: [
+      'Global delivery network (200+ cities in India, 100+ countries)',
+      'Advanced delivery modes (Midnight, Same-day, Early Morning)',
+      'Integrated real-time order tracking system',
+      'Custom B2B Vendor Inquiry & Order modules',
+    ],
+    detail: {
+      context:
+        'Vizag Florist needed to scale their local floristry business into a global gifting platform that could handle complex delivery schedules and international logistics.',
+      challenge:
+        'Managing time-sensitive deliveries (like midnight surprises) across different time zones and regions requires extreme operational precision and a robust technical foundation.',
+      solution:
+        'We built a comprehensive e-commerce platform with a sophisticated scheduling engine, secure multi-currency payments, and a centralized tracking portal for global shipments.',
+      outcomes: [
+        'Successful expansion into international markets',
+        'Higher customer satisfaction through precision delivery timing',
+        'Scalable infrastructure for high-volume holiday seasons',
       ],
     },
   },
@@ -408,6 +556,19 @@ export const industry = [
           'Searchable rider and event database',
         ],
       },
+      {
+        title: 'Dirty100: Rugged Event Access Control',
+        subtitle: 'Digitizing high-octane event logistics for the Motocross industry',
+        summary: 'The Dirty100 Gate Check-in system is a specialized mobile solution that ensures seamless entry management for large-scale sports events, even in the most demanding environments.',
+        challenge: 'Managing access for high-speed sports events requires both extreme speed and data accuracy, often in locations with limited infrastructure.',
+        approach: 'We focused on an offline-first architecture and a high-contrast, mobile-optimized UI that field staff could operate reliably during fast-paced race days.',
+        highlights: [
+          'Instant Pass & QR verification',
+          'Real-time data synchronization across all entry points',
+          'Comprehensive participant logs and entry history',
+          'Optimized for remote, low-connectivity environments',
+        ],
+      },
     ],
   },
   {
@@ -534,6 +695,70 @@ export const industry = [
           'Live tracking, manifests, invoices, and communication history in one place',
         ],
       },
+      {
+        title: 'Lead Edge Logistics: Speciality Chemicals & Global Freight',
+        subtitle: 'Simplifying complex supply chains with precision and transparency',
+        summary:
+          'Lead Edge Logistics provides world-class freight forwarding with a niche focus on specialty chemicals, ensuring safe and efficient global trade through a robust digital network.',
+        challenge:
+          'The specialty chemicals industry requires extreme precision, strict compliance, and constant monitoring, which traditional manual logistics systems struggle to provide at scale.',
+        approach:
+          'We built a logistics ecosystem centered on reliability and safety, incorporating real-time tracking, automated documentation for customs, and dedicated modules for hazardous material handling.',
+        highlights: [
+          'End-to-end Air, Ocean, and Land transport solutions',
+          'Specialized expertise in hazardous & non-hazardous chemical logistics',
+          'Automated Customs Brokerage and regulatory compliance',
+          '24/7 global support network with real-time status updates',
+        ],
+      },
+      {
+        title: 'Lodenrand Marines: Unified Maritime Tracking',
+        subtitle: 'Connecting global trade through transparent maritime logistics',
+        summary:
+          'Lodenrand Marines leverages a digital-first approach to NVOCC services, offering a unified platform for tracking global shipments across air and sea.',
+        challenge:
+          'Maritime logistics involves complex coordination between agents, vessels, and carriers, often lacking a single source of truth for shipment status.',
+        approach:
+          'We engineered a robust track-and-trace system integrated with global maritime data, focusing on speed, accuracy, and ease of use for international clients.',
+        highlights: [
+          'End-to-end NVOCC and liner shipping solutions',
+          'Integrated Air and Ocean freight tracking portal',
+          'Real-time visibility into Singapore-based global shipping hubs',
+          'Support for multiple tracking modes (Container, BL, Bill)',
+        ],
+      },
+      {
+        title: 'MFA: Scaling Global Logistics Networks',
+        subtitle: 'Empowering independent forwarders through digital connectivity',
+        summary:
+          'MFA is a premier global logistics alliance that uses digital innovation to connect freight forwarders across 75+ countries, enabling them to compete on a global scale.',
+        challenge:
+          'Independent forwarders often lack the global reach of multinational giants. They need a reliable, high-tech network to find trusted partners and manage international shipments.',
+        approach:
+          'We built a robust networking and management platform centered on the "Moving Forward" philosophy, integrating a mobile app that facilitates real-time business generation and communication.',
+        highlights: [
+          'Global reach across 150+ cities and 75+ countries',
+          'Centralized Member Directory and App-based networking',
+          'Innovative digital tools for logistics business development',
+          'Trusted network ecosystem for high-level logistics partnerships',
+        ],
+      },
+      {
+        title: 'Fleetvelos: Digitizing Transport Operations',
+        subtitle: 'Transforming paper-based fleet management into a digital growth engine',
+        summary:
+          'Fleetvelos is a specialized logistics platform that empowers fleet owners with real-time visibility and deep financial insights into their day-to-day transport operations.',
+        challenge:
+          'The transport industry is traditionally paper-heavy, making it difficult for owners to manage diverse costs and track long-term profitability accurately.',
+        approach:
+          'We built a user-friendly mobile experience centered on financial precision, incorporating automated billing and visual profit charts to help owners make data-driven decisions.',
+        highlights: [
+          'Live Trip status and location monitoring',
+          'Instant Profit & Loss tracking per vehicle',
+          'Centralized Driver and Maintenance registry',
+          'One-click professional PDF report generation',
+        ],
+      },
     ],
   },
   {
@@ -589,6 +814,21 @@ export const industry = [
       'We build focused business applications for internal teams, client processes, workflow visibility, and operational efficiency across multiple business functions.',
     features: ['Internal workflow dashboards', 'Client and operations portals', 'Role-specific toolsets', 'Reporting and performance visibility'],
     outcomes: ['Higher team productivity', 'Better process control', 'More scalable internal systems'],
+    caseStudies: [
+      {
+        title: 'Vizag Florist: Scaling Gifting Logistics',
+        subtitle: 'From local floristry to a global e-commerce powerhouse',
+        summary: 'Vizag Florist leverages a high-performance e-commerce platform to deliver emotions across borders, combining local expertise with global logistics scale.',
+        challenge: 'The gifting industry relies on emotional timing. A missed midnight delivery or a wilted bouquet can break a customer\'s trust, making reliability the most critical feature.',
+        approach: 'We designed the platform around "Delivery Confidence," incorporating real-time WhatsApp support, precision scheduling, and a transparent tracking system that keeps customers informed at every step.',
+        highlights: [
+          'Multi-category storefront (Flowers, Cakes, Hampers, Plants)',
+          'Global-to-Local logistics and vendor management',
+          'High-trust secure payment ecosystem (Visa, PayPal, RuPay)',
+          'Personalized user dashboards and occasion calendars',
+        ],
+      },
+    ],
   },
   {
     slug: 'lifestyle-apps',
