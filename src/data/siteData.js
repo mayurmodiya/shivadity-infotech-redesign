@@ -374,6 +374,34 @@ export const projects = [
       ],
     },
   },
+  {
+    slug: 'sahayta',
+    title: 'Sahayta',
+    category: 'Shelter Home & NGO Management',
+    summary: 'An AI-enabled community management platform that streamlines donations, expenses, and shelter home operations with automated invoice scanning.',
+    coverImage: portfolioImages.sahayta,
+    services: ['Web App Development', 'AI Automation', 'Financial Systems'],
+    techStack: ['React', 'Next.js', 'Node.js', 'AI-powered OCR'],
+    highlights: [
+      'AI-powered automated expense entry from bills',
+      'Centralized multi-shelter management dashboard',
+      'Automated donation receipting & donor tracking',
+      'Real-time financial analytics & transparency',
+    ],
+    detail: {
+      context:
+        'NGOs and charitable trusts often struggle with manual administration, fragmented records, and lack of operational transparency.',
+      challenge:
+        'Managing multiple shelter homes, tracking donor contributions, and processing thousands of invoices manually is time-consuming and prone to error.',
+      solution:
+        'We developed Sahayta as a smart ecosystem that uses AI to automate financial workflows, allowing organizations to focus more on their mission and less on administration.',
+      outcomes: [
+        'Significant reduction in manual data entry through AI scanning',
+        'Improved financial transparency for stakeholders',
+        'Unified operational control over multiple community facilities',
+      ],
+    },
+  },
 ];
 
 export const stats = [
@@ -826,6 +854,19 @@ export const industry = [
           'Global-to-Local logistics and vendor management',
           'High-trust secure payment ecosystem (Visa, PayPal, RuPay)',
           'Personalized user dashboards and occasion calendars',
+        ],
+      },
+      {
+        title: 'Sahayta: AI-Powered Community Management',
+        subtitle: 'Empowering NGOs through intelligent operational automation',
+        summary: 'Sahayta is an advanced digital platform designed to simplify daily operations for NGOs and shelter homes through AI-assisted financial processing and member tracking.',
+        challenge: 'Community organizations often operate with limited staff, making manual management of donations, expenses, and residents a major bottleneck for growth and impact.',
+        approach: 'We shaped the platform around "Mission-First Automation," integrating AI-based OCR for bill scanning and a secure role-based dashboard that unifies all organizational functions.',
+        highlights: [
+          'Smart resident and capacity tracking for shelter homes',
+          'Integrated donor management and automated receipting',
+          'Real-time expense categorization and visual analytics',
+          'Secure, role-based access for staff and volunteers',
         ],
       },
     ],

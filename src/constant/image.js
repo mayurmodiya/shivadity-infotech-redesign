@@ -12,6 +12,7 @@ import chicagoEntertainment from '../assets/images/portfolio/chicago-entertainme
 import dirty100GateCheckin from '../assets/images/portfolio/dirty100-gate-checkin.png';
 import fleetvelos from '../assets/images/portfolio/fleetvelos.png';
 import vizagFlorist from '../assets/images/portfolio/vizag-florist.png';
+import sahayta from '../assets/images/portfolio/sahayta.png';
 
 export const portfolioImages = {
   playAmigos,
@@ -28,4 +29,5 @@ export const portfolioImages = {
   dirty100GateCheckin,
   fleetvelos,
   vizagFlorist,
+  sahayta,
 };

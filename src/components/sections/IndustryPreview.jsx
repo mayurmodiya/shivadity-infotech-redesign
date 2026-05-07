@@ -39,7 +39,7 @@ const IndustryPreview = ({ compact = false, showHeading = true }) => {
                   <h3 className="mb-4 text-3xl font-bold text-slate-900 group-hover:text-brand-600 transition-colors">
                     {industry.title}
                   </h3>
-                  <p className="mb-6 text-lg leading-relaxed text-slate-500 line-clamp-3">
+                  <p className="mb-6 text-md leading-relaxed text-slate-500 line-clamp-3">
                     {industry.summary}
                   </p>
                   
@@ -52,7 +52,7 @@ const IndustryPreview = ({ compact = false, showHeading = true }) => {
                   </div>
 
                   <div className="inline-flex items-center gap-2 font-bold text-brand-600 group-hover:gap-3 transition-all">
-                    View industry details
+                    View details
                     <ArrowRight size={18} />
                   </div>
                 </div>
