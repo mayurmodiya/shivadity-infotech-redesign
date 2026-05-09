@@ -38,7 +38,7 @@ export const navigation = [
   { label: 'Home', href: '/' },
   { label: 'About', href: '/about' },
   { label: 'Services', href: '/services' },
-  { label: 'Industry', href: '/industry' },
+  { label: 'Industries', href: '/industry' },
   { label: 'Portfolio', href: '/portfolio' },
   { label: 'Blog', href: '/blog' },
   { label: 'Careers', href: '/careers' },
