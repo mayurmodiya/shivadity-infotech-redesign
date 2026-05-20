@@ -2,6 +2,7 @@ import { AnimatePresence, motion } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
+import logo from '../../assets/images/shivaditya-logo.svg';
 import { company, navigation } from '../../data/siteData';
 
 const Navbar = () => {
@@ -50,7 +51,7 @@ const Navbar = () => {
           <Link to="/" className="flex min-w-0 flex-1 items-center lg:flex-none">
             <div className="min-w-0">
               <img
-                src="/shivaditya-logo.png"
+                src={logo}
                 alt={company.name}
                 className="h-8 w-auto max-w-[180px] object-contain sm:h-9 sm:max-w-[220px] lg:max-w-[240px]"
               />

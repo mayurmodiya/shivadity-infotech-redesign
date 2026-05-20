@@ -1,5 +1,6 @@
 import { ArrowUpRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import logo from '../../assets/images/shivaditya-logo.svg';
 import { company, navigation, socialLinks } from '../../data/siteData';
 
 const Footer = () => {
@@ -9,7 +10,7 @@ const Footer = () => {
         <div className="grid gap-10 lg:grid-cols-[1.4fr_0.8fr_0.8fr]">
           <div>
             <div className="mb-5">
-              <img src="/shivaditya-logo.png" alt={company.name} className="h-12 w-auto object-contain" />
+              <img src={logo} alt={company.name} className="h-12 w-auto object-contain" />
             </div>
             <h2 className="max-w-md font-heading text-2xl font-semibold text-brand-950">
               Modern websites and digital products that make your business look as capable as it really is.
