@@ -57,20 +57,35 @@ const IndustryDetailPage = () => {
           </Reveal>
 
           <Reveal delay={0.08}>
-            <div className="glass-panel rounded-[2rem] p-6 sm:p-8">
-              <p className="text-sm font-semibold uppercase tracking-[0.24em] text-slate-500">Industry page reference</p>
-              <p className="mt-4 text-sm leading-7 text-slate-600">
-                This internal detail page is based on the corresponding industry solution area from your live website and is designed to keep visitors engaged inside the redesigned experience.
-              </p>
-              {/* <a
-                href={project.liveSource}
-                target="_blank"
-                rel="noreferrer"
-                className="mt-6 inline-flex items-center gap-2 rounded-full bg-brand-950 px-5 py-3 font-semibold text-white shadow-soft hover:-translate-y-0.5"
-              >
-                View Original Industry Page
-                <ArrowUpRight size={16} />
-              </a> */}
+            <div className="glass-panel rounded-[2rem] p-6 sm:p-8 flex flex-col justify-between h-full">
+              <div>
+                <p className="text-sm font-semibold uppercase tracking-[0.24em] text-slate-500">Practice Highlights</p>
+                <p className="mt-4 text-sm leading-7 text-slate-600">
+                  {project.practiceText || "We deliver custom software and digital systems designed specifically to solve core industry challenges."}
+                </p>
+
+                {project.practiceStats && (
+                  <div className="mt-6 grid grid-cols-2 gap-4">
+                    {project.practiceStats.map((stat) => (
+                      <div key={stat.label} className="rounded-2xl bg-slate-50/50 p-4 border border-slate-100/50">
+                        <p className="text-2xl font-bold text-brand-700">{stat.value}</p>
+                        <p className="mt-1 text-xs font-medium text-slate-500 leading-snug">{stat.label}</p>
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </div>
+
+              <div className="mt-8 pt-6 border-t border-slate-100 flex">
+                <Link
+                  to="/contact"
+                  state={{ industry: project.title }}
+                  className="w-full text-center justify-center inline-flex items-center gap-2 rounded-full bg-brand-950 px-5 py-3 font-semibold text-white shadow-soft hover:-translate-y-0.5 transition-all text-sm"
+                >
+                  Request Proposal
+                  <ArrowUpRight size={16} />
+                </Link>
+              </div>
             </div>
           </Reveal>
         </div>

@@ -40,10 +40,18 @@ const Navbar = () => {
   };
 
   return (
-    <header className="sticky top-0 z-50 px-4 pt-4 sm:px-6 lg:px-8">
+    <header
+      className={`sticky top-0 z-50 transition-all duration-300 ${
+        scrolled
+          ? 'pt-0 px-0 border-b border-slate-200/40 bg-white/75 shadow-glass backdrop-blur-lg'
+          : 'px-4 pt-4 sm:px-6 lg:px-8'
+      }`}
+    >
       <nav
-        className={`section-shell rounded-[1.75rem] border transition-all duration-300 ${
-          scrolled ? 'glass-panel shadow-glass' : 'border-white/60 bg-white/80 shadow-sm backdrop-blur'
+        className={`section-shell transition-all duration-300 ${
+          scrolled
+            ? 'border-transparent bg-transparent shadow-none rounded-none'
+            : 'rounded-[1.75rem] border border-white/60 bg-white/80 shadow-sm backdrop-blur-md'
         }`}
         aria-label="Primary navigation"
       >

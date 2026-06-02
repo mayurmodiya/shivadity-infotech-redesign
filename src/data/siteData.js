@@ -471,6 +471,13 @@ export const industry = [
     results: ['Patient empowerment', 'Data-driven care insights', 'Secure healthcare product design'],
     icon: Stethoscope,
     liveSource: 'https://shivadityainfotech.com/healthcare/',
+    practiceText: 'We build secure, compliant, and patient-centered digital health products that improve care coordination, tracking, and clinical outcomes.',
+    practiceStats: [
+      { value: 'HIPAA', label: 'Compliance standard' },
+      { value: '99.99%', label: 'Platform uptime' },
+      { value: 'IoT', label: 'Device integrations' },
+      { value: 'Secure', label: 'End-to-end encryption' }
+    ],
     intro:
       'We build healthcare products that make complex health journeys easier to understand, track, and manage for both patients and care-driven organizations.',
     challenge:
@@ -524,6 +531,13 @@ export const industry = [
     results: ['Personalized training', 'Motivation-driven engagement', 'Performance insights'],
     icon: Dumbbell,
     liveSource: 'https://shivadityainfotech.com/fitness-and-sports/',
+    practiceText: 'We design and develop high-energy, community-focused fitness and sports applications with real-time performance tracking and seamless payments.',
+    practiceStats: [
+      { value: '10M+', label: 'Workouts tracked' },
+      { value: 'Real-time', label: 'Sync & matchmaking' },
+      { value: 'Wearable', label: 'IoT integrations' },
+      { value: 'Global', label: 'Payment channels' }
+    ],
     intro:
       'We build fitness and sports products that keep users motivated with personalized training, progress visibility, and interactive experiences that support long-term engagement.',
     challenge:
@@ -607,6 +621,13 @@ export const industry = [
     results: ['Real-time communication', 'Community engagement', 'Scalable social architecture'],
     icon: Users,
     liveSource: 'https://shivadityainfotech.com/social-media/',
+    practiceText: 'We engineer highly interactive, sub-second latency social experiences centered around media sharing, community circles, and user trust.',
+    practiceStats: [
+      { value: '100k+', label: 'Concurrent users' },
+      { value: 'Sub-sec', label: 'Messaging latency' },
+      { value: 'Verified', label: 'ID & moderation systems' },
+      { value: 'CDN', label: 'Asset optimization' }
+    ],
     intro:
       'We design and develop social media applications that help people connect, engage, share content, and build communities through seamless digital experiences.',
     challenge:
@@ -659,6 +680,13 @@ export const industry = [
     results: ['AI-assisted valuation', 'Market transparency', 'Smarter property decisions'],
     icon: Home,
     liveSource: 'https://shivadityainfotech.com/real-estate/',
+    practiceText: 'We build property portals and analytical platforms equipped with intelligent property valuation tools, interactive maps, and smart lead engines.',
+    practiceStats: [
+      { value: 'AI-driven', label: 'Instant valuations' },
+      { value: 'Map-based', label: 'Dynamic searches' },
+      { value: '2x', label: 'Lead conversion boost' },
+      { value: 'MLS/API', label: 'Real-time sync' }
+    ],
     intro:
       'We create real estate products that help users evaluate properties faster, reduce uncertainty, and make better buying or selling decisions with digital confidence.',
     challenge:
@@ -696,6 +724,13 @@ export const industry = [
     results: ['Global shipment visibility', 'Provider connectivity', 'Operational transparency'],
     icon: Truck,
     liveSource: 'https://shivadityainfotech.com/logistic/',
+    practiceText: 'We build transparent supply chain systems that simplify freight shipping, carrier coordination, tracking, and compliance management.',
+    practiceStats: [
+      { value: 'End-to-End', label: 'Freight transparency' },
+      { value: '24/7', label: 'Support network' },
+      { value: 'Automated', label: 'Documentation & bills' },
+      { value: 'API-first', label: 'Carrier integrations' }
+    ],
     intro:
       'We build logistics products that help businesses simplify shipping, connect with providers faster, and track operations with more confidence from origin to delivery.',
     challenge:
@@ -797,6 +832,13 @@ export const industry = [
     results: ['Unified operations', 'Workflow automation', 'Real-time business visibility'],
     icon: Settings,
     liveSource: 'https://shivadityainfotech.com/erp/',
+    practiceText: 'We design custom enterprise resource planning systems that unify finance, HR, inventory, and sales into one secure, single source of truth.',
+    practiceStats: [
+      { value: '100%', label: 'Tailored workflows' },
+      { value: 'Unified', label: 'Department sync' },
+      { value: 'Secure', label: 'Role-based access' },
+      { value: 'Cloud/On-Prem', label: 'Flexible deployment' }
+    ],
     intro:
       'We build ERP solutions that bring finance, HR, inventory, sales, and operational workflows into one connected system designed around how your business actually works.',
     challenge:
@@ -834,6 +876,13 @@ export const industry = [
     results: ['Internal productivity', 'Custom workflows', 'Scalable business tools'],
     icon: Briefcase,
     liveSource: 'https://shivadityainfotech.com/business-apps/',
+    practiceText: 'We build internal portals, operational dashboards, and custom CRM systems to help businesses streamline processes and eliminate spreadsheets.',
+    practiceStats: [
+      { value: '40%+', label: 'Operational speed boost' },
+      { value: 'Custom', label: 'Portal frameworks' },
+      { value: 'Seamless', label: 'CRM & API integrations' },
+      { value: 'Zero', label: 'Manual spreadsheets' }
+    ],
     intro:
       'Custom business apps are often the fastest way to improve team productivity when off-the-shelf tools no longer fit the way a company actually operates.',
     challenge:
@@ -879,6 +928,13 @@ export const industry = [
     results: ['Daily-use engagement', 'Modern UI/UX', 'Subscription-ready flows'],
     icon: Sun,
     liveSource: 'https://shivadityainfotech.com/lifestyle/',
+    practiceText: 'We create daily-use digital products and wellness apps built around habit-forming UX, smooth onboarding, and high retention rates.',
+    practiceStats: [
+      { value: 'Retention', label: 'Core focus design' },
+      { value: 'Seamless', label: 'In-app monetization' },
+      { value: 'Push-ready', label: 'Notification scheduling' },
+      { value: 'Polished', label: 'Visual styling' }
+    ],
     intro:
       'Lifestyle products need to feel intuitive, visually engaging, and useful enough to become part of a user’s regular routine.',
     challenge:

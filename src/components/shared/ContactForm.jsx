@@ -1,5 +1,6 @@
 import { Send } from 'lucide-react';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 
 const initialState = {
   name: '',
@@ -11,10 +12,20 @@ const initialState = {
 const CONTACT_ENDPOINT = 'https://hrms.shivadityainfotech.com/api/contact-us';
 
 const ContactForm = () => {
+  const location = useLocation();
   const [form, setForm] = useState(initialState);
   const [submitting, setSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
   const [submitError, setSubmitError] = useState('');
+
+  useEffect(() => {
+    if (location.state?.industry) {
+      setForm((current) => ({
+        ...current,
+        message: `Hello, I'd like to discuss our project regarding ${location.state.industry}.`,
+      }));
+    }
+  }, [location.state]);
 
   const handleChange = (event) => {
     const { name, value } = event.target;
