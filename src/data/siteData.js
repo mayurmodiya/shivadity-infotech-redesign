@@ -1063,22 +1063,16 @@ export const openings = [
     summary: 'Lead advanced AI initiatives across machine learning, deep learning, and generative AI while guiding architecture, model strategy, and production implementation.',
   },
   {
-    title: 'React Frontend Developer',
-    type: 'Full-time',
-    location: 'Ahmedabad / Hybrid',
-    summary: 'Build scalable interfaces, collaborate on design systems, and create polished user journeys.',
-  },
-  {
     title: 'Senior AI/ML Engineer',
     type: 'Full-time',
     location: 'Ahmedabad / Hybrid',
     summary: 'Build and optimize AI/ML systems, production pipelines, and intelligent features with a strong focus on model performance, scalability, and business impact.',
   },
   {
-    title: 'UI/UX Designer',
-    type: 'Contract',
-    location: 'Remote',
-    summary: 'Shape product storytelling, wireframes, high-fidelity UI, and interactive prototypes for client projects.',
+    title: 'React Native Developer',
+    type: 'Full-time',
+    location: 'Ahmedabad / Hybrid',
+    summary: 'Build high-performance, cross-platform mobile applications for iOS and Android, ensuring smooth UI interactions, native integrations, and responsive designs.',
   },
   {
     title: 'Business Analyst',
