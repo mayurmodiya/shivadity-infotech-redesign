@@ -32,15 +32,6 @@ const ProjectDetailPage = () => {
     );
   }
 
-  const storyTitle = project.storyTitle || project.detail?.storyTitle || `A clearer narrative for ${project.title}`;
-  const storyDescription = project.storyDescription || project.detail?.storyDescription || `How we approached the context, challenge, and solution for ${project.title}.`;
-
-  const highlightsTitle = project.highlightsTitle || project.detail?.highlightsTitle || `Key Highlights of ${project.title}`;
-  const highlightsDescription = project.highlightsDescription || project.detail?.highlightsDescription || `Specific wins and features that make the ${project.title} build unique.`;
-
-  const outcomesTitle = project.outcomesTitle || project.detail?.outcomesTitle || `Measurable Outcomes`;
-  const outcomesDescription = project.outcomesDescription || project.detail?.outcomesDescription || `The tangible impact and result-focused delivery for ${project.title}.`;
-
   return (
     <PageShell className="pt-10">
       <PageMeta title={`${project.title} | Portfolio | Shivaditya Infotech`} description={project.summary} />
