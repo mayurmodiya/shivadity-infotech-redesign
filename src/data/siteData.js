@@ -61,12 +61,18 @@ export const projects = [
       'In-app chat and match coordination',
     ],
     detail: {
+      storyTitle: 'Creating a Unified Community for Sports Lovers',
+      storyDescription: 'How we turned a fragmented sports planning process into a frictionless, social match-making and venue booking mobile experience.',
       context:
         'Sports coordination usually happens across scattered groups and messages. The goal was to reduce planning friction while keeping the experience lightweight and social.',
       challenge:
         'Users needed to quickly understand who is playing, where to meet, and what skill level is expected — without long forms or confusing steps.',
       solution:
         'We designed a guided match creation and discovery experience with early intent signals (location + skill), clear join/create actions, and chat at the moment commitment is confirmed.',
+      highlightsTitle: 'Engineered for Discovery and Speed',
+      highlightsDescription: 'We structured the Play Amigos app around instant matchmaking, group coordination, and location-based discovery.',
+      outcomesTitle: 'Frictionless Sports Coordination',
+      outcomesDescription: 'The mobile platform resulted in rapid user adoption and minimized booking drop-offs through integrated planning.',
       outcomes: [
         'Faster time-to-join for new users',
         'Fewer drop-offs during match setup',
@@ -89,12 +95,18 @@ export const projects = [
       'Mobile-first dark UI patterns',
     ],
     detail: {
+      storyTitle: 'Building a High-Speed Leaderboard for Motocross',
+      storyDescription: 'How we designed a custom point calculation engine and real-time rankings to engage fans and riders in the motocross community.',
       context:
         'The client needed a unified ranking system that felt credible, fast, and exciting for a high-energy sports audience.',
       challenge:
         'Complex scoring rules and large datasets required both correctness and speed, especially on mobile.',
       solution:
         'We built a modular calculation engine, optimized queries and caching, and paired it with a bold interface for rapid browsing and filtering.',
+      highlightsTitle: 'Powering Real-Time Analytics',
+      highlightsDescription: 'The platform utilizes high-efficiency querying and caching to deliver massive motocross datasets in milliseconds.',
+      outcomesTitle: 'Fast and Accurate Leaderboards',
+      outcomesDescription: 'Riders and fans now access verified rankings instantly on mobile tracksides without loading delays.',
       outcomes: [
         'Reliable leaderboard updates',
         'Faster page loads on mobile',
@@ -117,12 +129,18 @@ export const projects = [
       'Privacy-first data approach',
     ],
     detail: {
+      storyTitle: 'Designing a Compassionate Health Companion',
+      storyDescription: 'How we focused on ease of logging and patient-centric data visualization to help migraine sufferers track triggers and symptoms.',
       context:
         'Users needed a calmer, more supportive alternative to basic headache diaries with better insight and reporting.',
       challenge:
         'Health logging must be quick enough for daily use while still capturing meaningful detail.',
       solution:
         'We created a low-friction logging flow, gentle data visualizations, and a report format that’s easy to share during appointments.',
+      highlightsTitle: 'Privacy-First Trigger Analysis',
+      highlightsDescription: 'The application uses secure, offline-first data logging paired with clean, non-intrusive charts suitable for patients during acute episodes.',
+      outcomesTitle: 'Clearer Insights for Clinicians',
+      outcomesDescription: 'Patients enjoy higher log compliance, leading to better diagnostic conversations with their doctors.',
       outcomes: ['Higher tracking consistency', 'Better trigger awareness', 'More useful clinical conversations'],
     },
   },
@@ -141,12 +159,18 @@ export const projects = [
       'Map-assisted visibility',
     ],
     detail: {
+      storyTitle: 'Centralizing Scattered Logistics Data',
+      storyDescription: 'How we built a role-based operational dashboard to eliminate spreadsheets and give dispatch teams real-time transit visibility.',
       context:
         'Operations teams needed a single source of truth for shipments, driver status, and customer updates.',
       challenge:
         'Information was fragmented across spreadsheets and messages, slowing responses to exceptions.',
       solution:
         'We designed a clean dashboard with timelines, queue-based workflows, and map context so teams can resolve issues faster.',
+      highlightsTitle: 'Unified Visibility and Control',
+      highlightsDescription: 'The dashboard integrates map visualization, real-time queues, and alert thresholds to highlight exceptions instantly.',
+      outcomesTitle: 'Streamlined Dispatch Workflows',
+      outcomesDescription: 'Operations teams now resolve exceptions 30% faster without relying on fragmented manual spreadsheets.',
       outcomes: ['Faster exception resolution', 'Higher operational visibility', 'Reduced manual coordination'],
     },
   },
@@ -165,12 +189,18 @@ export const projects = [
       'Real-time event discovery & classifieds',
     ],
     detail: {
+      storyTitle: 'A Safe Digital Haven for the Indian Diaspora',
+      storyDescription: 'How we established a secure community ecosystem connecting international students and expats with verified transport, housing, and social circles.',
       context:
         'The Indian diaspora abroad often faces challenges finding safe transport, reliable roommates, and a sense of belonging in a new country.',
       challenge:
         'Information is often fragmented across unverified social groups, leading to security concerns and difficulty in building trust.',
       solution:
         'We built a secure, all-in-one ecosystem centered on safety, using mandatory verification and specialized portals for essential community needs.',
+      highlightsTitle: 'Trust through Verification',
+      highlightsDescription: 'The platform combines robust identity checks with custom circles, housing boards, and ride-shares to ensure user safety.',
+      outcomesTitle: 'Building Community and Security',
+      outcomesDescription: 'Expats and students find trusted roommates and carpools quickly, reducing transition anxiety in a new country.',
       outcomes: [
         'Higher trust through mandatory verification',
         'Simplified access to shared community resources',
@@ -193,12 +223,18 @@ export const projects = [
       'Customs brokerage & documentation automation',
     ],
     detail: {
+      storyTitle: 'Streamlining Global Chemical Freight Logistics',
+      storyDescription: 'How we designed end-to-end supply chain tracking and compliance modules for hazardous specialty chemicals.',
       context:
         'Lead Edge Logistics needed a digital foundation to manage global freight operations, specifically for the complex requirements of specialty chemicals.',
       challenge:
         'Fragmented communication and lack of real-time visibility in international shipping often lead to delays and safety concerns, especially with hazardous materials.',
       solution:
         'We developed a unified platform that integrates air, ocean, and land transport tracking with specialized compliance modules for chemical logistics and real-time provider communication.',
+      highlightsTitle: 'End-to-End Compliance and Tracking',
+      highlightsDescription: 'The system monitors international chemical cargo, automates customs document generation, and manages carrier handoffs.',
+      outcomesTitle: 'Transparent Supply Chains',
+      outcomesDescription: 'Clients gain real-time visibility into transit states, significantly reducing customs delays and compliance errors.',
       outcomes: [
         'Enhanced operational transparency',
         'Improved safety compliance for chemical freight',
@@ -221,12 +257,18 @@ export const projects = [
       'Singapore-centered global logistics hub',
     ],
     detail: {
+      storyTitle: 'Unifying Oceans and Skies',
+      storyDescription: 'How we consolidated complex air and maritime tracking under one user-friendly multi-identifier portal.',
       context:
         'Lodenrand Marines needed a dedicated digital portal to unify their maritime logistics operations and provide customers with transparent shipment visibility.',
       challenge:
         'Tracking international shipments across different carriers and modes (Air/Ocean) often results in fragmented data and customer confusion.',
       solution:
         'We built a high-performance tracking portal that centralizes data from various shipping sources, allowing users to track via multiple identifiers through a single, intuitive interface.',
+      highlightsTitle: 'High-Efficiency Ship Tracking',
+      highlightsDescription: 'The tracking engine pulls container, bill of lading, and flight status data into a single client portal.',
+      outcomesTitle: 'Self-Service Logistics Clarity',
+      outcomesDescription: 'Customers track cargo independently, saving time for support teams and improving transit confidence.',
       outcomes: [
         'Consolidated tracking experience',
         'Increased customer self-service efficiency',
@@ -249,12 +291,18 @@ export const projects = [
       'Digital marketing & collaboration tools',
     ],
     detail: {
+      storyTitle: 'Networking 340+ Global Freight Forwarding Offices',
+      storyDescription: 'How we built a mobile networking app and digital portal to facilitate partner discovery and collaboration across 75+ countries.',
       context:
         'The Multinational Forwarders Alliance needed to modernize their global networking capabilities, moving from manual coordination to a digital-first ecosystem for their members.',
       challenge:
         'Managing a network of independent freight forwarders across 150+ cities requires high-trust communication and real-time collaboration tools that work across time zones.',
       solution:
         'We developed a unified digital platform and mobile application that allows members to discover partners, communicate securely, and manage logistics collaborations through a centralized interface.',
+      highlightsTitle: 'Cross-Border Collaboration Portal',
+      highlightsDescription: 'The app includes directories, secure business networking, and localized chat to coordinate shipments across borders.',
+      outcomesTitle: 'Increasing Network Referrals',
+      outcomesDescription: 'Members find trusted international partners in seconds, generating higher deal flow within the alliance.',
       outcomes: [
         'Streamlined member-to-member communication',
         'Increased business generation within the alliance',
@@ -277,12 +325,18 @@ export const projects = [
       'Corporate & Luxury wedding specializations',
     ],
     detail: {
+      storyTitle: 'Crafting Luxury Guest Experiences',
+      storyDescription: 'How we balanced high-end hospitality aesthetics with robust backend bookings and live interactive photo booth integrations.',
       context:
         'Chicago Entertainment Services needed a high-trust digital identity that balanced luxury hospitality with modern interactive technology.',
       challenge:
         'Event hosts often struggle with vendor fragmentation. The client needed a single-source solution for premium entertainment and planning.',
       solution:
         'We built a high-end digital presence centered on "Unforgettable Moments," featuring an integrated booking system and specialized modules for interactive event tech.',
+      highlightsTitle: 'Sleek Booking & Tech Integration',
+      highlightsDescription: 'The system connects cinematic 360 video and photo booth APIs with custom planning schedules for events.',
+      outcomesTitle: 'Higher Booking Conversions',
+      outcomesDescription: 'Luxury event planners configure their entertainment packages seamlessly, increasing reservation numbers.',
       outcomes: [
         'Elevated brand authority in the luxury event space',
         'Streamlined inquiry and planning workflows',
@@ -305,12 +359,18 @@ export const projects = [
       'Automated digital check-in receipts',
     ],
     detail: {
+      storyTitle: 'Ruggedizing Gate Check-ins for Motocross Events',
+      storyDescription: 'How we engineered an offline-first QR scanning mobile application that works flawlessly in dusty, remote motocross tracks.',
       context:
         'The Dirty100 Motocross events needed a reliable way to manage rider check-ins in high-volume, often remote environments where paper systems were failing.',
       challenge:
         'Race day coordination involves handling hundreds of riders in dusty, outdoor locations with inconsistent internet connectivity.',
       solution:
         'We engineered a ruggedized mobile-first check-in application with offline data capture, instant QR verification, and a real-time dashboard for event organizers.',
+      highlightsTitle: 'Offline-First Access System',
+      highlightsDescription: 'The app syncs local offline databases with the cloud and scans codes instantly to keep check-in queues moving.',
+      outcomesTitle: 'Eliminating Race-Day Bottlenecks',
+      outcomesDescription: 'Wait times at the gate dropped dramatically, allowing race heats to start exactly on schedule.',
       outcomes: [
         'Significant reduction in rider check-in wait times',
         'Eliminated paper-based data entry errors',
@@ -333,12 +393,18 @@ export const projects = [
       'Unified digital ledger for maintenance & salaries',
     ],
     detail: {
+      storyTitle: 'Digitizing Fleet Books and Trip Ledgers',
+      storyDescription: 'How we replaced paper logs and manual calculation with a mobile ledger that tracks trip expenses, profits, and driver salaries.',
       context:
         'Fleet owners often rely on fragmented paper registers and manual calculations, leading to financial leakage and operational blind spots.',
       challenge:
         'Transport businesses need a reliable way to track every expense, trip, and maintenance event while providing clear financial reporting to stakeholders.',
       solution:
         'We developed Fleetvelos as a high-performance mobile platform that digitizes the entire logistics workflow, from driver assignments to final billing and profit analysis.',
+      highlightsTitle: 'Simplified Fleet Accounting',
+      highlightsDescription: 'The platform automates the calculation of expenses, fuel, driver payouts, and bills, generating PDF statements on the fly.',
+      outcomesTitle: 'Stopping Financial Leakage',
+      outcomesDescription: 'Fleet owners monitor trip profitability in real-time, reducing accounting overhead and human calculation errors.',
       outcomes: [
         'Eliminated manual calculation errors',
         'Provided instant financial clarity on trip profitability',
@@ -361,12 +427,18 @@ export const projects = [
       'Custom B2B Vendor Inquiry & Order modules',
     ],
     detail: {
+      storyTitle: 'Scaling Floral Gifting to 100+ Countries',
+      storyDescription: 'How we developed a global e-commerce engine with precise midnight/same-day scheduling and multi-vendor logistics integration.',
       context:
         'Vizag Florist needed to scale their local floristry business into a global gifting platform that could handle complex delivery schedules and international logistics.',
       challenge:
         'Managing time-sensitive deliveries (like midnight surprises) across different time zones and regions requires extreme operational precision and a robust technical foundation.',
       solution:
         'We built a comprehensive e-commerce platform with a sophisticated scheduling engine, secure multi-currency payments, and a centralized tracking portal for global shipments.',
+      highlightsTitle: 'Precision Scheduling and Multi-Currency',
+      highlightsDescription: 'The e-commerce store handles local vendor routing, midnight surprise scheduling, and secure global payments.',
+      outcomesTitle: 'Global E-commerce Growth',
+      outcomesDescription: 'Vizag Florist successfully processes high holiday order volumes internationally with transparent delivery tracking.',
       outcomes: [
         'Successful expansion into international markets',
         'Higher customer satisfaction through precision delivery timing',
@@ -389,12 +461,18 @@ export const projects = [
       'Real-time financial analytics & transparency',
     ],
     detail: {
+      storyTitle: 'AI-Powered Automation for Social Good',
+      storyDescription: 'How we integrated AI invoice scanning and resident tracking to simplify administrative workloads for NGO teams.',
       context:
         'NGOs and charitable trusts often struggle with manual administration, fragmented records, and lack of operational transparency.',
       challenge:
         'Managing multiple shelter homes, tracking donor contributions, and processing thousands of invoices manually is time-consuming and prone to error.',
       solution:
         'We developed Sahayta as a smart ecosystem that uses AI to automate financial workflows, allowing organizations to focus more on their mission and less on administration.',
+      highlightsTitle: 'AI Scanning & Centralized Dashboards',
+      highlightsDescription: 'Smart OCR automatically populates financial records from photos of receipts, saving hours of manual data entry.',
+      outcomesTitle: 'Transparency and Reduced Admin Load',
+      outcomesDescription: 'Shelter home directors spend less time on bookkeeping and more time delivering community support.',
       outcomes: [
         'Significant reduction in manual data entry through AI scanning',
         'Improved financial transparency for stakeholders',

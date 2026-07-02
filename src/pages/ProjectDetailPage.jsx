@@ -32,6 +32,15 @@ const ProjectDetailPage = () => {
     );
   }
 
+  const storyTitle = project.storyTitle || project.detail?.storyTitle || `A clearer narrative for ${project.title}`;
+  const storyDescription = project.storyDescription || project.detail?.storyDescription || `How we approached the context, challenge, and solution for ${project.title}.`;
+
+  const highlightsTitle = project.highlightsTitle || project.detail?.highlightsTitle || `Key Highlights of ${project.title}`;
+  const highlightsDescription = project.highlightsDescription || project.detail?.highlightsDescription || `Specific wins and features that make the ${project.title} build unique.`;
+
+  const outcomesTitle = project.outcomesTitle || project.detail?.outcomesTitle || `Measurable Outcomes`;
+  const outcomesDescription = project.outcomesDescription || project.detail?.outcomesDescription || `The tangible impact and result-focused delivery for ${project.title}.`;
+
   return (
     <PageShell className="pt-10">
       <PageMeta title={`${project.title} | Portfolio | Shivaditya Infotech`} description={project.summary} />
@@ -114,8 +123,8 @@ const ProjectDetailPage = () => {
         <Reveal>
           <SectionHeading
             badge="Project Story"
-            title="A clearer narrative — context, challenge, and solution"
-            description="This layout is built to feel premium, readable, and on-theme with the rest of the site."
+            title={storyTitle}
+            description={storyDescription}
           />
         </Reveal>
 
@@ -157,9 +166,9 @@ const ProjectDetailPage = () => {
           <Reveal>
             <div className="glass-panel rounded-[2rem] p-6 sm:p-8">
               <p className="text-sm font-semibold uppercase tracking-[0.24em] text-brand-600">Highlights</p>
-              <h2 className="mt-4 font-heading text-3xl font-semibold text-ink">What makes this build feel better</h2>
+              <h2 className="mt-4 font-heading text-3xl font-semibold text-ink">{highlightsTitle}</h2>
               <p className="mt-4 text-sm leading-7 text-slate-600">
-                We present the most important wins in a scannable format — aligned to the theme colors and spacing system.
+                {highlightsDescription}
               </p>
 
               <ul className="mt-8 space-y-3">
@@ -178,9 +187,9 @@ const ProjectDetailPage = () => {
           <Reveal delay={0.08}>
             <div className="glass-panel rounded-[2rem] p-6 sm:p-8">
               <p className="text-sm font-semibold uppercase tracking-[0.24em] text-brand-600">Outcomes</p>
-              <h2 className="mt-4 font-heading text-3xl font-semibold text-ink">Result-focused delivery</h2>
+              <h2 className="mt-4 font-heading text-3xl font-semibold text-ink">{outcomesTitle}</h2>
               <p className="mt-4 text-sm leading-7 text-slate-600">
-                We highlight impact in plain language so the page reads like a credible case story, not a generic showcase.
+                {outcomesDescription}
               </p>
 
               <div className="mt-8 space-y-3">
