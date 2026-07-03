@@ -32,6 +32,15 @@ const ProjectDetailPage = () => {
     );
   }
 
+  const {
+    storyTitle,
+    storyDescription,
+    highlightsTitle,
+    highlightsDescription,
+    outcomesTitle,
+    outcomesDescription,
+  } = project.detail || {};
+
   return (
     <PageShell className="pt-10">
       <PageMeta title={`${project.title} | Portfolio | Shivaditya Infotech`} description={project.summary} />
