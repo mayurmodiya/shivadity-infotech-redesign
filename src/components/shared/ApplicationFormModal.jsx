@@ -1,5 +1,5 @@
 import { Send, X } from 'lucide-react';
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useMemo, useState, useRef } from 'react';
 
 const initialState = {
   name: '',
@@ -8,15 +8,18 @@ const initialState = {
   experience: '',
   portfolio: '',
   coverLetter: '',
+  notes: '',
 };
 
 const APPLICATION_ENDPOINT = 'https://hrms.shivadityainfotech.com/api/job-applications';
 
 const ApplicationFormModal = ({ opening, onClose }) => {
   const [form, setForm] = useState(initialState);
+  const [resume, setResume] = useState(null);
   const [submitting, setSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
   const [submitError, setSubmitError] = useState('');
+  const fileInputRef = useRef(null);
 
   useEffect(() => {
     const onKeyDown = (event) => {
@@ -40,13 +43,21 @@ const ApplicationFormModal = ({ opening, onClose }) => {
       /\S+@\S+\.\S+/.test(form.email) &&
       form.phone.trim() &&
       form.experience.trim() &&
-      form.coverLetter.trim().length > 20
+      form.coverLetter.trim().length > 20 &&
+      resume !== null
     );
-  }, [form]);
+  }, [form, resume]);
 
   const handleChange = (event) => {
     const { name, value } = event.target;
     setForm((current) => ({ ...current, [name]: value }));
+  };
+
+  const handleFileChange = (event) => {
+    const file = event.target.files[0];
+    if (file) {
+      setResume(file);
+    }
   };
 
   const handleSubmit = async (event) => {
@@ -58,21 +69,25 @@ const ApplicationFormModal = ({ opening, onClose }) => {
     setSubmitError('');
 
     try {
+      const formData = new FormData();
+      formData.append('role', opening.title);
+      formData.append('name', form.name.trim());
+      formData.append('email', form.email.trim());
+      formData.append('phone', form.phone.trim());
+      formData.append('experience', form.experience.trim());
+      formData.append('portfolio', form.portfolio.trim());
+      formData.append('coverLetter', form.coverLetter.trim());
+      formData.append('notes', form.notes.trim());
+      if (resume) {
+        formData.append('resume', resume);
+      }
+
       const response = await fetch(APPLICATION_ENDPOINT, {
         method: 'POST',
         headers: {
           Accept: 'application/json',
-          'Content-Type': 'application/json',
         },
-        body: JSON.stringify({
-          role: opening.title,
-          name: form.name.trim(),
-          email: form.email.trim(),
-          phone: form.phone.trim(),
-          experience: form.experience.trim(),
-          portfolio: form.portfolio.trim(),
-          coverLetter: form.coverLetter.trim(),
-        }),
+        body: formData,
       });
 
       if (!response.ok) {
@@ -82,6 +97,10 @@ const ApplicationFormModal = ({ opening, onClose }) => {
       setSubmitting(false);
       setSubmitted(true);
       setForm(initialState);
+      setResume(null);
+      if (fileInputRef.current) {
+        fileInputRef.current.value = '';
+      }
     } catch (error) {
       setSubmitting(false);
       setSubmitted(false);
@@ -127,7 +146,7 @@ const ApplicationFormModal = ({ opening, onClose }) => {
         <form className="mt-8 space-y-5" onSubmit={handleSubmit}>
           <div className="grid gap-5 sm:grid-cols-2">
             <label className="block text-sm font-medium text-slate-700">
-              Full name
+              Full name *
               <input
                 type="text"
                 name="name"
@@ -140,7 +159,7 @@ const ApplicationFormModal = ({ opening, onClose }) => {
             </label>
 
             <label className="block text-sm font-medium text-slate-700">
-              Email address
+              Email address *
               <input
                 type="email"
                 name="email"
@@ -155,7 +174,7 @@ const ApplicationFormModal = ({ opening, onClose }) => {
 
           <div className="grid gap-5 sm:grid-cols-2">
             <label className="block text-sm font-medium text-slate-700">
-              Phone number
+              Phone number *
               <input
                 type="tel"
                 name="phone"
@@ -168,21 +187,21 @@ const ApplicationFormModal = ({ opening, onClose }) => {
             </label>
 
             <label className="block text-sm font-medium text-slate-700">
-              Experience
+              Experience *
               <input
                 type="text"
                 name="experience"
                 value={form.experience}
                 onChange={handleChange}
                 className="mt-2 w-full rounded-2xl border border-slate-200 bg-white px-4 py-3 outline-none placeholder:text-slate-400 focus:border-brand-400"
-                placeholder="e.g. 4 years"
+                placeholder="e.g. 3 years"
                 required
               />
             </label>
           </div>
 
           <label className="block text-sm font-medium text-slate-700">
-            Portfolio / LinkedIn / Resume link
+            Portfolio / LinkedIn / Website link
             <input
               type="url"
               name="portfolio"
@@ -194,7 +213,40 @@ const ApplicationFormModal = ({ opening, onClose }) => {
           </label>
 
           <label className="block text-sm font-medium text-slate-700">
-            Why are you a good fit?
+            Notes / Additional information
+            <input
+              type="text"
+              name="notes"
+              value={form.notes}
+              onChange={handleChange}
+              className="mt-2 w-full rounded-2xl border border-slate-200 bg-white px-4 py-3 outline-none placeholder:text-slate-400 focus:border-brand-400"
+              placeholder="e.g. Available to join immediately"
+            />
+          </label>
+
+          <div className="block text-sm font-medium text-slate-700">
+            Upload Resume *
+            <div className="relative mt-2 flex items-center justify-center rounded-2xl border border-dashed border-slate-200 bg-white p-6 transition hover:border-brand-400">
+              <input
+                ref={fileInputRef}
+                type="file"
+                name="resume"
+                accept=".pdf,.doc,.docx,.odt"
+                onChange={handleFileChange}
+                className="absolute inset-0 cursor-pointer opacity-0"
+                required
+              />
+              <div className="text-center">
+                <p className="text-sm font-medium text-slate-600">
+                  {resume ? `Selected: ${resume.name}` : 'Click or drag and drop to upload your resume'}
+                </p>
+                <p className="mt-1 text-xs text-slate-400">PDF, DOC, DOCX up to 10MB</p>
+              </div>
+            </div>
+          </div>
+
+          <label className="block text-sm font-medium text-slate-700">
+            Why are you a good fit? *
             <textarea
               name="coverLetter"
               rows="6"
@@ -236,7 +288,7 @@ const ApplicationFormModal = ({ opening, onClose }) => {
 
           {submitted ? (
             <p className="text-sm font-medium text-accent-700">
-              Thanks. Your application for {opening.title} has been queued for review.
+              Thanks. Your application for {opening.title} has been submitted successfully!
             </p>
           ) : null}
 
