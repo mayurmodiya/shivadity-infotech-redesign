@@ -45,24 +45,26 @@ const AboutPage = () => {
             </p>
           </Reveal>
 
-          <Reveal delay={0.08}>
-            <div className="glass-panel rounded-[2rem] p-6 sm:p-8">
-              <div className="grid gap-5 sm:grid-cols-3">
-                {pillars.map((pillar) => {
-                  const Icon = pillar.icon;
-                  return (
-                    <article key={pillar.title} className="rounded-[1.5rem] bg-white p-5 shadow-sm">
-                      <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-brand-950 text-white">
+          <div className="space-y-5">
+            {pillars.map((pillar, index) => {
+              const Icon = pillar.icon;
+              return (
+                <Reveal key={pillar.title} delay={index * 0.08}>
+                  <article className="glass-panel rounded-[1.5rem] p-6">
+                    <div className="flex items-start gap-4">
+                      <div className="mt-1 flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-brand-950 text-white">
                         <Icon size={18} />
                       </div>
-                      <h3 className="mt-5 font-heading text-xl font-semibold text-ink">{pillar.title}</h3>
-                      <p className="mt-3 text-sm leading-7 text-slate-600">{pillar.text}</p>
-                    </article>
-                  );
-                })}
-              </div>
-            </div>
-          </Reveal>
+                      <div>
+                        <h3 className="font-heading text-xl font-semibold text-ink">{pillar.title}</h3>
+                        <p className="mt-2 text-sm leading-7 text-slate-600">{pillar.text}</p>
+                      </div>
+                    </div>
+                  </article>
+                </Reveal>
+              );
+            })}
+          </div>
         </div>
       </section>
 
